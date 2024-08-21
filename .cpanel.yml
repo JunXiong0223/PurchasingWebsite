@@ -2,6 +2,6 @@
 deployment:
       tasks:
         - export DEPLOYPATH=/home/purchasi/public_html  
-        - /bin cp * $DEPLOYPATH                           
+        - /bin/cp -r * $DEPLOYPATH                      
                    
                                
