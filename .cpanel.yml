@@ -1,7 +1,7 @@
 ---
 deployment:
       tasks:
-        - export DEPLOYPATH=/home/purchasi/public_html/test
+        - export DEPLOYPATH=/home/purchasi/public_html/test/
         - /bin/cp -r * $DEPLOYPATH                      
                    
                                
