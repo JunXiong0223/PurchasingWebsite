@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Location and Get Address with OSM</title>
+    <style>
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+    </style>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+</head>
+<body>
+    <h1>Pin Your Location</h1>
+    <div id="map"></div>
+    <p>Pinned Location: <span id="location"></span></p>
+    <p>Address: <span id="address"></span></p>
+    <input type="hidden" id="lat" name="latitude">
+    <input type="hidden" id="lng" name="longitude">
+    <button id="confirm">Confirm Location</button>
+
+    <p>This code is referenced from OpenStreetMap (OSM) and is intended solely for testing and educational purposes. The use of this code should comply with all relevant legal and licensing requirements. If any legal concerns or violations arise from the use of this code, please inform us immediately so that appropriate actions can be taken. OpenStreetMap data is available under the Open Database License (ODbL), and users must ensure that their usage adheres to the terms of this license.</p>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+    <script>
+        let map, marker;
+
+        function initMap() {
+            // Default location (center of the map)
+            const defaultLocation = [51.505, -0.09]; // Latitude, Longitude
+
+            // Initialize the map
+            map = L.map('map').setView(defaultLocation, 13);
+
+            // Load and display tile layer on the map (from OSM)
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+            }).addTo(map);
+
+            // Create a draggable marker and place it on the default location
+            marker = L.marker(defaultLocation, {draggable: true}).addTo(map);
+
+            // Get the user's current location when the page loads
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    function(position) {
+                        const userLat = position.coords.latitude;
+                        const userLng = position.coords.longitude;
+                        map.setView([userLat, userLng], 13); // Center map on user's location
+                        marker.setLatLng([userLat, userLng]); // Move marker to user's location
+                        updateLocation(userLat, userLng);
+                    },
+                    function() {
+                        alert("Could not get your location. Showing default location.");
+                    }
+                );
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+
+            // Update location when marker is dragged
+            marker.on('dragend', function(event) {
+                const lat = marker.getLatLng().lat;
+                const lng = marker.getLatLng().lng;
+                updateLocation(lat, lng);
+            });
+
+            // Allow users to pin the location by clicking on the map
+            map.on('click', function(event) {
+                const lat = event.latlng.lat;
+                const lng = event.latlng.lng;
+                marker.setLatLng([lat, lng]); // Move marker to the clicked location
+                updateLocation(lat, lng);
+            });
+        }
+
+        function updateLocation(lat, lng) {
+            document.getElementById("location").textContent = `Latitude: ${lat}, Longitude: ${lng}`;
+            document.getElementById("lat").value = lat;
+            document.getElementById("lng").value = lng;
+            getAddress(lat, lng);
+        }
+
+        function getAddress(lat, lng) {
+            fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data && data.display_name) {
+                        document.getElementById("address").textContent = data.display_name;
+                    } else {
+                        document.getElementById("address").textContent = "No address found";
+                    }
+                })
+                .catch(error => {
+                    document.getElementById("address").textContent = "Geocoding failed: " + error;
+                });
+        }
+
+        document.getElementById("confirm").addEventListener("click", function() {
+            const lat = document.getElementById("lat").value;
+            const lng = document.getElementById("lng").value;
+            const address = document.getElementById("address").textContent;
+            alert(`Location confirmed! Latitude: ${lat}, Longitude: ${lng}, Address: ${address}`);
+            // Here you can submit the address and coordinates to your server or handle them as needed
+        });
+
+        // Initialize the map on page load
+        window.onload = initMap;
+    </script>
+</body>
+</html>
