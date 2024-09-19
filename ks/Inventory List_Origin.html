@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="assets/css/alert.css">
     <link rel="stylesheet" href="assets/css/Bootstrap-4---Tabs-with-Arrows.css">
@@ -131,19 +130,14 @@
                     </div>
                 </nav>
                 <div class="container-fluid">
-                    <div class="alert alert-success d-none alert-dismissible" role="alert" id="successMessage" style="background-color: #B4F7D2!important;border: 1px solid #0C6D38;position: absolute;"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" id="close_alert"></button><i class="icon ion-checkmark-round me-1"></i><span style="color: #0C6D38 !important;">Record Added Successfully</span></div>
-                    <div class="row justify-content-center" style="margin: 0px;">
+                    <div class="row justify-content-center">
                         <div class="col-xl-10 col-xxl-9">
                             <div class="card shadow">
-                                <div class="card-header d-flex flex-wrap justify-content-center align-items-center justify-content-sm-between gap-3" style="padding: 8px 16px;">
-                                    <div class="row" style="margin: 0px;width: 100%;">
-                                        <div class="col-xl-10 col-xxl-11" style="padding: 0px;">
-                                            <h1 style="margin: 0px 0px;margin-bottom: 0px;">Inventory Management</h1>
-                                        </div>
-                                        <div class="col text-center" style="padding: 0px;">
-                                            <div class="input-group input-group-sm text-end" style="width: 35px;"><button class="btn btn-outline-primary btn-sm" type="button" style="background: rgb(8,197,50);width: 35px;height: 35px;padding: 4px 4px;margin: 5px 15px;" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-1"><i class="material-icons mb-1" style="color: rgb(255,255,255);">add</i></button></div>
-                                        </div>
-                                    </div>
+                                <div class="card-header d-flex flex-wrap justify-content-center align-items-center justify-content-sm-between gap-3">
+                                    <h5 class="display-6 text-nowrap text-capitalize mb-0">Inventory Management</h5>
+                                    <div class="input-group input-group-sm w-auto"><input class="form-control form-control-sm" type="text"><button class="btn btn-outline-primary btn-sm" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search mb-1">
+                                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                                            </svg></button></div>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
@@ -168,7 +162,7 @@
                                                     <td class="text-center">6/9/2024</td>
                                                     <td class="text-center">6/9/2024</td>
                                                     <td class="text-center">Khye Shen</td>
-                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#modal-1"><i class="material-icons" id="showAlertBtn" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                                    <td class="text-start text-center"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(78,115,223);margin-right: 5px;">edit</i><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(231,74,59);">delete</i></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-truncate" style="max-width: 200px;">SN0001</td>
@@ -177,7 +171,7 @@
                                                     <td class="text-center">6/9/2024</td>
                                                     <td class="text-center">6/9/2024</td>
                                                     <td class="text-center">Khye Shen</td>
-                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                                    <td class="text-start text-center"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(78,115,223);margin-right: 5px;">edit</i><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(231,74,59);">delete</i></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-truncate" style="max-width: 200px;">SN0001</td>
@@ -186,7 +180,7 @@
                                                     <td class="text-center">6/9/2024</td>
                                                     <td class="text-center">6/9/2024</td>
                                                     <td class="text-center">Khye Shen</td>
-                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                                    <td class="text-start text-center"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(78,115,223);margin-right: 5px;">edit</i><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(231,74,59);">delete</i></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-truncate" style="max-width: 200px;">SN0001</td>
@@ -195,7 +189,7 @@
                                                     <td class="text-center">6/9/2024</td>
                                                     <td class="text-center">6/9/2024</td>
                                                     <td class="text-center">Khye Shen</td>
-                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                                    <td class="text-start text-center"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(78,115,223);margin-right: 5px;">edit</i><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(231,74,59);">delete</i></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-truncate" style="max-width: 200px;">SN0001</td>
@@ -204,7 +198,7 @@
                                                     <td class="text-center">6/9/2024</td>
                                                     <td class="text-center">6/9/2024</td>
                                                     <td class="text-center">Khye Shen</td>
-                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                                    <td class="text-start text-center"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(78,115,223);margin-right: 5px;">edit</i><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(231,74,59);">delete</i></td>
                                                 </tr>
                                                 <tr></tr>
                                             </tbody>
@@ -233,99 +227,6 @@
                 </div>
             </footer>
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
-    </div>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-1">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title">Add Inventory</h5><button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body" style="border-color: rgb(255,255,255);">
-            <div class="container">
-                <div class="row" style="margin-bottom: 10px;">
-                    <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Product Image</p><img src="assets/img/Battery.png" width="96" height="82">
-                    </div>
-                </div>
-                <div class="row" style="margin-bottom: 10px;">
-                    <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Product Name</p>
-                        <div class="dropdown" style="width: 100%;height: 30px;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="color: rgb(0,0,0);background: rgb(255,255,255);width: 100%;text-align: left;border-color: rgb(136,136,136);height: 30px;padding: 2px 12px;">Battery A</button>
-                            <div class="dropdown-menu" style="width: 100%;"><a class="dropdown-item" href="#">Battery A</a><a class="dropdown-item" href="#">Battery B</a><a class="dropdown-item" href="#">Battery C</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row" style="margin-bottom: 10px;">
-                    <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Brand Name</p><input type="text" style="width: 100%;">
-                    </div>
-                </div>
-                <div class="row" style="margin-bottom: 10px;">
-                    <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Serial Number</p><input type="text" style="width: 100%;">
-                    </div>
-                </div>
-                <div class="row" style="margin-bottom: 20px;">
-                    <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Entry Date</p><input type="date" style="width: 100%;height: 30px;">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 col-lg-10 text-end" style="width: 100%;"><button class="btn btn-primary" id="btnaddinventory" type="button" data-bs-dismiss="offcanvas" style="background: rgb(8,197,50);margin: 0px 10px;">Add</button><button class="btn btn-primary" type="button" data-bs-dismiss="offcanvas" style="background: rgb(231,74,59);">Cancel</button></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-2">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title">Edit Inventory</h5><button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body" style="border-color: rgb(255,255,255);">
-            <div class="container">
-                <div class="row" style="margin-bottom: 10px;">
-                    <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Product Image</p><img src="assets/img/Battery.png" width="96" height="82">
-                    </div>
-                </div>
-                <div class="row" style="margin-bottom: 10px;">
-                    <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Product Name</p>
-                        <div class="dropdown" style="width: 100%;height: 30px;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="color: rgb(0,0,0);background: rgb(255,255,255);width: 100%;text-align: left;border-color: rgb(136,136,136);height: 30px;padding: 2px 12px;">Battery A</button>
-                            <div class="dropdown-menu" style="width: 100%;"><a class="dropdown-item" href="#">Battery A</a><a class="dropdown-item" href="#">Battery B</a><a class="dropdown-item" href="#">Battery C</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row" style="margin-bottom: 10px;">
-                    <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Brand Name</p><input type="text" style="width: 100%;" value="Brand A">
-                    </div>
-                </div>
-                <div class="row" style="margin-bottom: 10px;">
-                    <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Serial Number</p><input type="text" style="width: 100%;" value="SN001">
-                    </div>
-                </div>
-                <div class="row" style="margin-bottom: 20px;">
-                    <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Entry Date</p><input type="date" style="width: 100%;height: 30px;" value="06/09/2024">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 col-lg-10 text-end" style="width: 100%;"><button class="btn btn-primary" type="button" data-bs-dismiss="offcanvas" style="background: rgb(78,115,223);margin: 0px 10px;">Edit</button><button class="btn btn-primary" type="button" data-bs-dismiss="offcanvas" style="background: rgb(231,74,59);">Cancel</button></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Delete Alert!</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Are you confirm to delete this record?</p>
-                </div>
-                <div class="modal-footer"><button class="btn btn-primary" id="showAlertBtn" type="button" data-bs-target="#modal-2" data-bs-toggle="modal" data-bs-dismiss="modal">Yes</button><button class="btn btn-light" type="button" data-bs-dismiss="modal" style="background: rgb(231,74,59);color: rgb(255,255,255);">No</button></div>
-            </div>
-        </div>
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/Alert.js"></script>

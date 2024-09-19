@@ -131,14 +131,14 @@
                     </div>
                 </nav>
                 <div class="container-fluid">
-                    <div class="alert alert-success d-none alert-dismissible" role="alert" id="successMessage" style="background-color: #B4F7D2!important;border: 1px solid #0C6D38;position: absolute;"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" id="close_alert"></button><i class="icon ion-checkmark-round me-1"></i><span style="color: #0C6D38 !important;">Record Added Successfully</span></div>
+                    <div class="alert alert-success d-none alert-dismissible" role="alert" id="successMessage" style="background-color: #B4F7D2!important;border: 1px solid #0C6D38;"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" id="close_alert"></button><i class="icon ion-checkmark-round me-1"></i><span style="color: #0C6D38 !important;">Record Added Successfully</span></div>
                     <div class="row justify-content-center" style="margin: 0px;">
                         <div class="col-xl-10 col-xxl-9">
                             <div class="card shadow">
                                 <div class="card-header d-flex flex-wrap justify-content-center align-items-center justify-content-sm-between gap-3" style="padding: 8px 16px;">
                                     <div class="row" style="margin: 0px;width: 100%;">
                                         <div class="col-xl-10 col-xxl-11" style="padding: 0px;">
-                                            <h1 style="margin: 0px 0px;margin-bottom: 0px;">Inventory Management</h1>
+                                            <h1 style="margin: 0px 0px;margin-bottom: 0px;">User Management</h1>
                                         </div>
                                         <div class="col text-center" style="padding: 0px;">
                                             <div class="input-group input-group-sm text-end" style="width: 35px;"><button class="btn btn-outline-primary btn-sm" type="button" style="background: rgb(8,197,50);width: 35px;height: 35px;padding: 4px 4px;margin: 5px 15px;" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-1"><i class="material-icons mb-1" style="color: rgb(255,255,255);">add</i></button></div>
@@ -150,60 +150,78 @@
                                         <table class="table table-striped table-hover">
                                             <thead>
                                                 <tr>
-                                                    <th>Serial Number</th>
-                                                    <th>Product Name</th>
-                                                    <th>Brand Name</th>
-                                                    <th>Entry Date</th>
-                                                    <th>Modified Date</th>
-                                                    <th>Modified By</th>
+                                                    <th>User ID</th>
+                                                    <th>Email Address</th>
+                                                    <th>First Name</th>
+                                                    <th>Last Name</th>
+                                                    <th>Gender</th>
+                                                    <th>Phone No.</th>
+                                                    <th>Shipping Address</th>
+                                                    <th>Sign Up By</th>
+                                                    <th>Status</th>
                                                     <th class="text-center">Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr></tr>
                                                 <tr>
-                                                    <td class="text-truncate" style="max-width: 200px;">SN0001</td>
-                                                    <td class="text-truncate" style="max-width: 200px;">NS60R (46B24R) MF AMARON GO</td>
-                                                    <td class="text-center">Amaron</td>
-                                                    <td class="text-center">6/9/2024</td>
-                                                    <td class="text-center">6/9/2024</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">00001</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">khyeshen91@gmail.com</td>
                                                     <td class="text-center">Khye Shen</td>
+                                                    <td class="text-center">Tan</td>
+                                                    <td class="text-center">M</td>
+                                                    <td class="text-center">012-3456789</td>
+                                                    <td class="text-center">2A-10-2, Waterfront Q1, Jalan Queens, 11900, Bayan Lepas, Pulau Pinang</td>
+                                                    <td class="text-center">6/9/2024</td>
+                                                    <td class="text-center">Active</td>
                                                     <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#modal-1"><i class="material-icons" id="showAlertBtn" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-truncate" style="max-width: 200px;">SN0001</td>
-                                                    <td class="text-truncate" style="max-width: 200px;">NX100-6L (55B24L) MF AMARON HI-LIFE</td>
-                                                    <td class="text-center">Amaron</td>
-                                                    <td class="text-center">6/9/2024</td>
-                                                    <td class="text-center">6/9/2024</td>
-                                                    <td class="text-center">Khye Shen</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">00002</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">jackson11@gmail.com</td>
+                                                    <td class="text-center">Jackson</td>
+                                                    <td class="text-center">Wang</td>
+                                                    <td class="text-center">M</td>
+                                                    <td class="text-center">011-32789876</td>
+                                                    <td class="text-center">22-3, Menara KLCC, Jalan Ampang, 50450 Kuala Lumpur<br><br></td>
+                                                    <td class="text-center">16/4/2023</td>
+                                                    <td class="text-center">Frozen</td>
                                                     <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-truncate" style="max-width: 200px;">SN0001</td>
-                                                    <td class="text-truncate" style="max-width: 200px;">NS60R (46B24R) MF AMARON GO</td>
-                                                    <td class="text-center">Amaron</td>
-                                                    <td class="text-center">6/9/2024</td>
-                                                    <td class="text-center">6/9/2024</td>
-                                                    <td class="text-center">Khye Shen</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">00003</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">chongwei12@gmail.com</td>
+                                                    <td class="text-center">Chong Wei</td>
+                                                    <td class="text-center">Lee</td>
+                                                    <td class="text-center">M</td>
+                                                    <td class="text-center">011-37485728</td>
+                                                    <td class="text-center">45-2-1, Block A, Bayan Mutiara, Jalan Mutiara 4, 11900 Bayan Lepas, Penang<br><br></td>
+                                                    <td class="text-center">19/9/2024</td>
+                                                    <td class="text-center">Active</td>
                                                     <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-truncate" style="max-width: 200px;">SN0001</td>
-                                                    <td class="text-truncate" style="max-width: 200px;">ELITO NS60</td>
-                                                    <td class="text-center">Elito</td>
-                                                    <td class="text-center">6/9/2024</td>
-                                                    <td class="text-center">6/9/2024</td>
-                                                    <td class="text-center">Khye Shen</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">00004</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">jennie13@gmail.com</td>
+                                                    <td class="text-center">Jennie</td>
+                                                    <td class="text-center">Ang</td>
+                                                    <td class="text-center">F</td>
+                                                    <td class="text-center">010-22449987</td>
+                                                    <td class="text-center">78, Jalan Sutera Tanjung 8/4, Taman Sutera Utama, 81300 Johor Bahru, Johor<br><br></td>
+                                                    <td class="text-center">15/3/2024</td>
+                                                    <td class="text-center">Active</td>
                                                     <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-truncate" style="max-width: 200px;">SN0001</td>
-                                                    <td class="text-truncate" style="max-width: 200px;">ELITO NS60</td>
-                                                    <td class="text-center">Elito</td>
-                                                    <td class="text-center">6/9/2024</td>
-                                                    <td class="text-center">6/9/2024</td>
-                                                    <td class="text-center">Khye Shen</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">00005</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">jacky14@gmail.com</td>
+                                                    <td class="text-center">Jacky</td>
+                                                    <td class="text-center">Liew</td>
+                                                    <td class="text-center">M</td>
+                                                    <td class="text-center">011-23654876</td>
+                                                    <td class="text-center">101, Lorong Lintas Plaza, Lintas, 88300 Kota Kinabalu, Sabah<br><br></td>
+                                                    <td class="text-center">23/1/2022</td>
+                                                    <td class="text-center">Active</td>
                                                     <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr></tr>
