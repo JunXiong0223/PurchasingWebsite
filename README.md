@@ -9,14 +9,15 @@ Receipt - On Hold
 Sign up - 
 
 JX:
-Payment Checkout - /ProductCheckout - Checkout.html
-Location Selecting - 
-Order History - 
-Order Details -
-Password Reset - 
-Password Changing - 
-Payment Record - 
-User Profile - 
+Payment Checkout - /JX/Payment Checkout/CheckoutSearchAddress.html
+Location Selecting - /JX/Payment Checkout/Address.html
+Order History - /JX/Order/Order.html
+Order Details - /JX/Order/OrderDetail.html
+Password Reset - /JX/Profile/Reset Passowrd.html
+Password Changing - /JX/Profile/Change Passowrd.html
+Payment Record List -/JX/Admin Order/Admin Order/AdminOrder.html
+Payment Record Details - /JX/Admin Order/Admin Order Detail/AdminOrderDetail.html
+User Profile - /JX/Profile/Profile.html
 
 KS:
 Dashboard - /ks/Admin - Dashboard.html
