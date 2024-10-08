@@ -1,12 +1,12 @@
 ZY:
 Product Details - /ZYong/ProductDetails - ProductDetail.html
-Product Adding & Editing - 
-Product Management - 
-Product Browsing - 
-Cart - /ZYong/ProductDetails - ProductDetail.html
-Login - 
+Product Adding & Editing - /ZYong/
+Product Management - /ZYong/
+Product Browsing - /ZYong/
+Cart - /ZYong/ProductDetails - Cart.html
+Login - /ZYong/
 Receipt - On Hold
-Sign up - 
+Sign up - /ZYong/
 
 JX:
 Payment Checkout - /JX/Payment Checkout/CheckoutSearchAddress.html
