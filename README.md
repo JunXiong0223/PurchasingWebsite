@@ -26,3 +26,10 @@ Feedback Form / WhatsApp button - /ks/Admin - Feedback.html
 Homepage - /ks/Product - Homepage.html
 Inventory Managment - /ks/Admin - Inventory List.html
 Warranty - On hold
+
+Blocker and doubt:
+1- user nav bar
+2- Standardize the design and components such as alert box, confirm deletion box, nav bar colour and table format
+3- Payment record in table format
+4- Order creation page
+5- Project Tasks_v2.xlsx has uploaded to Github, please refer to excel file
