@@ -1,10 +1,11 @@
 ZY:
 Product Details - /ZYong/ProductDetails - ProductDetail.html
-Product Adding & Editing - /ZYong/
-Product Management - /ZYong/
-Product Browsing - /ZYong/
+Product Adding & Editing - /ZYong/ProductManagement - ProductManagement.html
+Product Management - /ZYong/ProductManagement - ProductManagement.html
+Product Browsing - /ZYong/ProductBrowsing - BrowseProduct.html & Filtered_BrowseProduct.html
 Cart - /ZYong/ProductDetails - Cart.html
-Login - /ZYong/
+Login (User) - /ZYong/
+Login (Admin) - /ZYong/
 Receipt - On Hold
 Sign up - /ZYong/
 
@@ -26,10 +27,3 @@ Feedback Form / WhatsApp button - /ks/Admin - Feedback.html
 Homepage - /ks/Product - Homepage.html
 Inventory Managment - /ks/Admin - Inventory List.html
 Warranty - On hold
-
-Blocker and doubt:
-1- user nav bar
-2- Standardize the design and components such as alert box, confirm deletion box, nav bar colour and table format
-3- Payment record in table format
-4- Order creation page
-5- Project Tasks_v2.xlsx has uploaded to Github, please refer to excel file
