@@ -38,3 +38,8 @@ Blocker and doubt:
 5- Order List Page (Title)
 6- Inventory Management Add Status
 5- Project Tasks_v2.xlsx has uploaded to Github, please refer to excel file
+
+Reminder:
+1- put your name as the apendix of the design
+2- standardize the component like nav, data table, footer, alert, modal
+3- One person integrate the design
