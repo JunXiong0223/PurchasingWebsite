@@ -44,7 +44,7 @@ Reminder:
 2- standardize the component like nav, data table, footer, alert, modal
 
 USer nav - ZY Product detail
-User Footer - KS Product/Homepage (Pending)
+User Footer - KS Product/Homepage, refer to /ks/static footer.txt
 Data table - PurchasingWebsite\PurchasingWebsite\JX\Admin Order\Admin Order and Payment\Admin.bsdesign (Add buttton follow ZY design)
 Delete Confirmaton Box - /ZY/ProductManagement
 Add/Edit Modal - /ZY/ProductManagement
