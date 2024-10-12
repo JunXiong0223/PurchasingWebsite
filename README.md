@@ -12,8 +12,14 @@ Receipt - On Hold
 JX:
 Payment Checkout - /JX/Payment Checkout/CheckoutSearchAddress.html
 Location Selecting - /JX/Payment Checkout/Address.html
+User Order History - /JX/Order/Order.html
+User Order Details - /JX/Order/OrderDetail.html
+Admin Order List -  /JX/Admin Order/Admin Order/AdminOrder.html
+Admin Order Details - /JX/Admin Order/Admin Order Detail/AdminOrderDetail.html
 Password Reset - /JX/Profile/Reset Passowrd.html
 Password Changing - /JX/Profile/Change Passowrd.html
+Payment Record List -/JX/Admin Order/Admin Order/AdminPayment.html
+Payment Record Details - On Hold for recepit template
 User Profile - /JX/Profile/Profile.html
 
 KS:
