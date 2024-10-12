@@ -49,4 +49,4 @@ Data table - PurchasingWebsite\PurchasingWebsite\JX\Admin Order\Admin Order and 
 Delete Confirmaton Box - /ZY/ProductManagement
 Add/Edit Modal - /ZY/ProductManagement
 Admin Nav -/ks/Admin/Dashboard.html (Pending)
-Successful message - /ZY/ProductDetails/ProductDetail
+Successful message - /ZY/ProductDetails/ProductDetailSuccessful message - /ZY/ProductDetails/ProductDetail 
