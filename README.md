@@ -29,6 +29,8 @@ Feedback Form / WhatsApp button - /ks/Admin - Feedback.html
 Homepage - /ks/Product - Homepage.html
 Inventory Managment - /ks/Admin - Inventory List.html
 Warranty - On hold
+Add Order Page - /ks/Admin/Add Orer.html
+Confirm Order Page - /ks/Admin/Confirm Order.html
 
 Blocker and doubt:
 1- user nav bar
