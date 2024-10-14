@@ -10,17 +10,17 @@ Login (Admin) - /ZYong/Login & Signup/LoginPage_Admin.html
 Receipt - On Hold
 
 JX:
-Payment Checkout - /JX/Payment Checkout/V2/CheckoutSearchAddress.html (Done)
-Location Selecting - /JX/Payment Checkout/V2/Address.html (Done)
-User Order History - /JX/Order/V2/Order.html (Done)
-User Order Details - /JX/Order/V2/OrderDetail.html (Done)
-Admin Order List -  /JX/Admin Order/Admin Order/AdminOrder.html - Pending for Admin Navi
-Admin Order Details - /JX/Admin Order/Admin Order Detail/AdminOrderDetail.html - Pending for Admin Navi
-Password Reset - /JX/Profile/V2/Reset Passowrd.html (Done)
-Password Changing - /JX/Profile/V2/Change Passowrd.html (Done)
-Payment Record List -/JX/Admin Order/Admin Order/AdminPayment.html - Pending for Admin Navi
+*Payment Checkout - /JX/Payment Checkout/V2/CheckoutSearchAddress.html (Done)
+*Location Selecting - /JX/Payment Checkout/V2/Address.html (Done)
+*User Order History - /JX/Order/V2/Order.html (Done)
+*User Order Details - /JX/Order/V2/OrderDetail.html (Done)
+*Admin Order List -  /JX/Admin Order/Admin Order/AdminOrder.html - Pending for Admin Navi
+*Admin Order Details - /JX/Admin Order/Admin Order Detail/AdminOrderDetail.html - Pending for Admin Navi
+*Password Reset - /JX/Profile/V2/Reset Passowrd.html (Done)
+*Password Changing - /JX/Profile/V2/Change Passowrd.html (Done)
+*Payment Record List -/JX/Admin Order/Admin Order/AdminPayment.html - Pending for Admin Navi
 Payment Record Details - On Hold for recepit template
-User Profile - /JX/Profile/V2/Profile.html (Done)
+*User Profile - /JX/Profile/V2/Profile.html (Done)
 
 KS:
 Dashboard - /ks/Admin - Dashboard.html
