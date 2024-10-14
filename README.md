@@ -1,11 +1,11 @@
 ZY:
-Product Details - /ZYong/ProductDetails - ProductDetail.html
-Product Adding & Editing - /ZYong/ProductManagement - ProductManagement.html
-Product Management - /ZYong/ProductManagement - ProductManagement.html
-Product Browsing - /ZYong/ProductBrowsing - BrowseProduct.html & Filtered_BrowseProduct.html
-Cart - /ZYong/ProductDetails - Cart.html
-Login (User) - /ZYong/Login & Signup/LoginPage_User.html
-Sign up (User) - /ZYong/Login & Signup/SignUpPage_User.html & Login & Signup/SignUpSuccessfulPage_User.html
+*Product Details - /ZYong/ProductDetails - ProductDetail.html
+*Product Adding & Editing - /ZYong/ProductManagement - ProductManagement.html
+*Product Management - /ZYong/ProductManagement - ProductManagement.html
+*Product Browsing - /ZYong/ProductBrowsing - BrowseProduct.html & Filtered_BrowseProduct.html
+*Cart - /ZYong/ProductDetails - Cart.html
+*Login (User) - /ZYong/Login & Signup/LoginPage_User.html
+*Sign up (User) - /ZYong/Login & Signup/SignUpPage_User.html & Login & Signup/SignUpSuccessfulPage_User.html
 Login (Admin) - /ZYong/Login & Signup/LoginPage_Admin.html
 Receipt - On Hold
 
