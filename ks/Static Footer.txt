@@ -2,8 +2,8 @@
 2.Set min height 100vh for body
 3.Set display to flex for body
 4.Go to flexbox section and set direction to column for body
-5.Select the content (not including nav) and give the class name as main
+5.Select the content (not including nav) and give the id name as main
 6.Create custom css and give the specification below
 #main{
-flex 1;
+flex: 1;
 }
