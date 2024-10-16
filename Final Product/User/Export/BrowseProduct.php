@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="assets/css/StaticFooter.css">
 </head>
 
-<body>
+<body class="flex-column" style="min-height: 100vh;display: flex;">
     <nav class="navbar navbar-light navbar-expand-sm d-flex">
         <div class="container"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button><a class="navbar-brand" href="#">Brand</a><i class="fas fa-shopping-cart order-sm-last" style="font-size: 22px;margin-left: 10px;"></i>
             <form class="d-flex flex-fill align-content-center ms-auto" style="width: 440px;max-width: 720px;">
@@ -46,7 +46,7 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="container main">
         <div class="row">
             <div class="col-6" style="padding: 6px 12px;">
                 <h5>All Products</h5>

@@ -4,14 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Product (2)</title>
+    <title>User_V2</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi&amp;display=swap">
     <link rel="stylesheet" href="assets/css/Font%20Awesome%205%20Brands.css">
     <link rel="stylesheet" href="assets/css/Font%20Awesome%205%20Free.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/Footer-Dark-Multi-Column-icons.css">
     <link rel="stylesheet" href="assets/css/Navbar-Fixed-Side-navbar-fixed-side.css">
     <link rel="stylesheet" href="assets/css/fonts/fontawesome-all.min.css">
@@ -25,28 +24,23 @@
     <link rel="stylesheet" href="assets/css/StaticFooter.css">
 </head>
 
-<body class="flex-column" style="display: flex;">
-    <nav class="navbar navbar-light navbar-expand-sm d-flex">
-        <div class="container"><button data-bs-toggle="collapse" data-bs-target="#navcol-1" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button><a class="navbar-brand" href="#">Brand</a><a class="btn btn-primary d-flex flex-sm-row-reverse order-sm-last flex-md-row-reverse" role="button" style="background: rgba(13,110,253,0);border-width: 0px;padding: 0px;padding-left: 0px;margin-left: 10px;" href="Cart.html"><i class="fas fa-shopping-cart order-sm-last" style="font-size: 22px;color: rgb(0,0,0);"></i><span id="cartCount" style="background: #ff0000;color: rgb(255,255,255);border-radius: 50%;font-size: 12px;padding: 2px 6px;">0</span></a>
-            <form class="d-flex flex-fill align-content-center ms-auto" style="width: 440px;max-width: 720px;margin-top: 5px;"><input class="form-control" type="search"><button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button></form>
-            <div class="collapse navbar-collapse flex-grow-0 ms-auto" id="navcol-1">
-                <ul class="navbar-nav d-xxl-flex ms-auto">
-                    <li class="nav-item d-sm-flex align-items-sm-center"><a class="nav-link active" href="Homepage.html">Home</a><a class="nav-link" href="Order.html">Order</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Warranty</a></li>
-                    <li class="nav-item d-flex d-xl-flex flex-grow-1 align-items-center">
-                        <div class="nav-item dropstart" data-bs-smooth-scroll="true"><a aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="far fa-user" style="font-size: 24px;"></i></a>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="Profile.html">Profile</a><a class="dropdown-item" href="Feeback.html">Feedback</a><a class="dropdown-item" href="LoginPage_User.html">Logout</a></div>
-                        </div>
-                    </li>
-                </ul>
+<body class="flex-column" style="display: flex;height: 100vh;">
+    <div class="container" id="main" style="margin-bottom: 10%;">
+        <div class="row">
+            <div class="col fixed-top" style="padding-top: 0px;padding-right: 0px;padding-left: 0px;"><img class="img-fluid w-100" src="assets/img/black_970x90.gif" style="padding: 0px;padding-top: 0px;"></div>
+            <div class="col d-flex justify-content-center align-items-center" style="padding: 6px 12px;margin-top: 20%;">
+                <div class="card" style="background: rgba(255,255,255,0);width: 80%;height: 100%;border-radius: 20px;border-width: 0px;padding: 6px 12px;box-shadow: 0px 3px 5px 1px rgba(33,37,41,0.18);">
+                    <div class="card-body" style="padding: 6px 12px;">
+                        <form style="padding: 6px 12px;"><label class="form-label" style="color: rgb(0,0,0);font-weight: bold;">Company Name</label><input class="form-control" type="text" inputmode="email" placeholder="Company Name" style="width: 100%;border-radius: 0px;border-width: 0px;box-shadow: 0px 3px 5px 1px rgba(33,37,41,0.18);"></form>
+                        <form style="padding: 6px 12px;"><label class="form-label" style="color: rgb(0,0,0);font-weight: bold;">Email Address</label><input class="form-control" type="text" inputmode="email" placeholder="Email Address" style="width: 100%;border-radius: 0px;border-width: 0px;box-shadow: 0px 3px 5px 1px rgba(33,37,41,0.18);"></form>
+                        <form style="padding: 6px 12px;"><label class="form-label" style="color: rgb(0,0,0);font-weight: bold;">Password</label><input class="form-control" type="password" placeholder="Password" style="border-radius: 0px;box-shadow: 0px 3px 5px 1px rgba(33,37,41,0.18);border-width: 0px;"></form>
+                    </div>
+                    <div class="col" id="alreadyhaveanaccountbtn" style="text-align: right;padding: 6px 12px;"><a class="btn btn-primary" role="button" style="color: rgb(0,0,0);font-weight: bold;font-size: 14px;background: rgba(255,255,255,0);border-width: 0px;padding: 0px 12px;" href="LoginPage_User.html">Already have an account?&nbsp;<i class="fas fa-arrow-right"></i></a></div>
+                    <div class="col" id="signupbtn" style="text-align: center;padding: 6px 12px;"><a class="btn btn-primary" role="button" style="color: rgb(255,255,255);font-weight: bold;font-size: 12px;background: rgb(247,73,73);border-width: 0px;padding: 6px 12px;width: 50%;height: 100%;border-radius: 20px;" href="SignUpSuccessfulPage_User.html">SIGN UP</a></div>
+                </div>
             </div>
         </div>
-    </nav>
-    <main>
-        <div class="col-12 d-md-flex justify-content-md-center" style="text-align: center;font-size: 10px;"><img class="img-fluid d-md-flex justify-content-md-center rubberBand animated fit-cover" style="height: auto;width: 75%;margin-top: 0px;" src="assets/img/Screenshot%202024-06-01%20124830.png" width="499" height="407"></div>
-        <div class="col text-center" style="--bs-body-bg: transparent;background: var(--bs-teal);height: auto;padding: 8px;"><i class="fas fa-phone-alt" style="padding-right: 0px;margin-right: 10px;"></i><strong>03-2288-2888</strong></div>
-        <div class="col-12 d-md-flex justify-content-md-center" style="text-align: center;font-size: 10px;"><img class="img-fluid d-md-flex justify-content-md-center rubberBand animated fit-cover" style="height: auto;width: 75%;margin-top: 0px;" src="assets/img/Screenshot%202024-06-01%20124830.png" width="499" height="407"></div>
-    </main>
+    </div>
     <footer class="text-white bg-dark">
         <div class="container py-4 py-lg-5">
             <div class="row justify-content-center">

@@ -25,18 +25,18 @@
 </head>
 
 <body class="flex-column" style="height: 100vh;display: flex;">
-    <div class="container main" style="margin-bottom: 10%;">
+    <div class="container" id="main" style="margin-bottom: 10%;">
         <div class="row">
             <div class="col fixed-top" style="padding-top: 0px;padding-right: 0px;padding-left: 0px;"><img class="img-fluid w-100" src="assets/img/black_970x90.gif" style="padding: 0px;padding-top: 0px;"></div>
-            <div class="col d-flex justify-content-center align-items-center" style="padding: 6px 12px;margin-top: 20%;">
-                <div class="card" style="background: rgba(255,255,255,0);border-radius: 20px;border-width: 0px;box-shadow: 0px 3px 5px 1px rgba(33,37,41,0.18);padding: 6px 12px;height: 100%;width: 80%;">
+            <div class="col d-flex justify-content-center align-items-center" style="padding: 6px 12px;margin-top: 20%;margin-bottom: 0px;">
+                <div class="card" style="background: rgba(255,255,255,0);width: 80%;height: 100%;border-radius: 20px;border-width: 0px;padding: 6px 12px;box-shadow: 0px 3px 5px 1px rgba(33,37,41,0.18);">
                     <div class="card-body" style="padding: 6px 12px;">
-                        <form style="padding: 6px 12px;"><label class="form-label" style="color: rgb(0,0,0);font-weight: bold;">Email Address</label><input class="form-control" type="text" inputmode="email" placeholder="Email Address" style="width: 100%;border-radius: 0px;border-width: 0px;box-shadow: 0px 3px 5px 1px rgba(33,37,41,0.18);"></form>
-                        <form style="padding: 6px 12px;"><label class="form-label" style="color: rgb(0,0,0);font-weight: bold;">Password</label><input class="form-control" type="password" placeholder="Password" style="border-radius: 0px;box-shadow: 0px 3px 5px 1px rgba(33,37,41,0.18);border-width: 0px;"></form>
+                        <form>
+                            <div class="col" style="text-align: center;padding: 6px 11px;"><i class="far fa-check-circle text-success" style="font-size: 50px;"></i></div>
+                            <p style="font-size: 11px;text-align: center;margin-bottom: 0px;"><br>You have registered succesfully. Please proceed to login.<br><br></p>
+                        </form>
                     </div>
-                    <div class="col" id="forgetpasswordbtn" style="text-align: right;padding: 6px 12px;font-size: 12px;"><a class="btn btn-primary" role="button" style="color: rgb(0,0,0);font-weight: bold;font-size: 14px;background: rgba(255,255,255,0);border-width: 0px;padding: 0px 12px;" href="Reset%20Passowrd.html">Forgot your password?</a></div>
-                    <div class="col" id="loginbtn" style="text-align: center;padding: 6px 12px;"><a class="btn btn-primary" role="button" style="color: rgb(255,255,255);font-weight: bold;font-size: 12px;background: rgb(247,73,73);border-width: 0px;padding: 6px 12px;width: 50%;height: 100%;border-radius: 20px;" href="Homepage.html">LOGIN</a></div>
-                    <div class="col" id="signupbtn" style="text-align: center;padding: 6px 12px;"><a class="btn btn-primary" role="button" style="color: rgb(255,255,255);font-weight: bold;font-size: 12px;background: rgb(247,73,73);border-width: 0px;padding: 6px 12px;width: 50%;height: 100%;border-radius: 20px;" href="SignUpPage_User.html">SIGN UP</a></div>
+                    <div class="col" id="signupbtn" style="text-align: center;padding: 6px 12px;"><a class="btn btn-primary" role="button" style="color: rgb(255,255,255);font-weight: bold;font-size: 12px;background: rgb(247,73,73);border-width: 0px;padding: 6px 12px;width: 50%;height: 100%;border-radius: 20px;" href="LoginPage_User.html">LOGIN</a></div>
                 </div>
             </div>
         </div>
