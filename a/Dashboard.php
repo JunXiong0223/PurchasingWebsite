@@ -21,8 +21,8 @@
 
 <body id="page-top">
     <div id="wrapper">
-        <!-- Navigation Bar  -->
-        <?php include 'nav.php' ?>
+        <!-- Navigation Bar -->
+        <?php include 'Nav.php' ?>
 
         <div class="d-flex flex-column" id="content-wrapper" style="margin: -1px;">
             <div id="content">
