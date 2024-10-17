@@ -22,22 +22,10 @@
 
 <body id="page-top">
     <div id="wrapper">
-        <nav class="navbar navbar-dark bg-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" style="--bs-primary: #131318;--bs-primary-rgb: 19,19,24;color: rgb(24,24,25);background: var(--bs-black);">
-            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
-                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
-                    <div class="sidebar-brand-text mx-3"><span>Brand</span></div>
-                </a>
-                <hr class="sidebar-divider my-0">
-                <ul class="navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item"><a class="nav-link" href="Origin.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-user"></i><span>Profile</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="table.html"><i class="fas fa-table"></i><span>Table</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.html"><i class="far fa-user-circle"></i><span>Login</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="register.html"><i class="fas fa-user-circle"></i><span>Register</span></a></li>
-                </ul>
-                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
-            </div>
-        </nav>
+        
+        <!-- Navigation Bar -->
+        <?php include 'Nav.php' ?>
+
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
                 <nav class="navbar navbar-light navbar-expand bg-dark shadow mb-4 topbar static-top">
@@ -142,9 +130,9 @@
                                 <div class="card-header d-flex flex-wrap justify-content-center align-items-center justify-content-sm-between gap-3" style="padding: 8px 16px;">
                                     <div class="row" style="margin: 0px;width: 100%;">
                                         <div class="col-xl-10 col-xxl-10" style="padding: 0px;">
-                                            <h1 style="margin: 0px 0px;margin-bottom: 0px;">User Management</h1>
+                                            <h1 style="margin: 0px 0px;margin-bottom: 0px;">Inventory Management</h1>
                                         </div>
-                                        <div class="col-xxl-2 text-center d-xxl-flex justify-content-xxl-end align-items-xxl-center" style="padding: 0px;"><button class="btn btn-primary" type="button" style="width: 95px;font-weight: bold;color: rgb(255,255,255);background: #0bbc1d;border-width: 0px;" data-bs-target="#offcanvas-1" data-bs-toggle="offcanvas"><i class="fas fa-plus-square" style="border-color: rgb(255,255,255);color: rgb(255,255,255);background: rgba(255,255,255,0);font-size: 18px;"></i>&nbsp; Add</button></div>
+                                        <div class="col-xxl-2 text-center d-xxl-flex justify-content-xxl-center align-items-xxl-center" style="padding: 0px;"><button class="btn btn-primary" type="button" style="width: 95px;font-weight: bold;color: rgb(255,255,255);background: #0bbc1d;border-width: 0px;" data-bs-target="#addProductsOffcanvas" data-bs-toggle="offcanvas"><i class="fas fa-plus-square" style="border-color: rgb(255,255,255);color: rgb(255,255,255);background: rgba(255,255,255,0);font-size: 18px;"></i>&nbsp; Add</button></div>
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -152,77 +140,122 @@
                                         <table class="table table-striped table-hover" id="example">
                                             <thead>
                                                 <tr>
-                                                    <th class="text-center">User ID</th>
-                                                    <th class="text-center">Email Address</th>
-                                                    <th class="text-center">First Name</th>
-                                                    <th class="text-center">Last Name</th>
-                                                    <th class="text-center">Gender</th>
-                                                    <th class="text-center">Phone No.</th>
-                                                    <th class="text-center" style="min-width: 300px;padding: 20px;">Shipping Address</th>
-                                                    <th class="text-center">Sign Up By</th>
-                                                    <th class="text-center">Status</th>
-                                                    <th class="text-center text-center">Action</th>
+                                                    <th>Serial Number</th>
+                                                    <th>Product Name</th>
+                                                    <th>Brand Name</th>
+                                                    <th>Entry Date</th>
+                                                    <th>Modified Date</th>
+                                                    <th>Modified By</th>
+                                                    <th class="text-center">Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="text-truncate" style="max-width: 200px;">00001</td>
-                                                    <td class="text-truncate" style="max-width: 200px;">khyeshen91@gmail.com</td>
-                                                    <td class="text-center">Khye Shen</td>
-                                                    <td class="text-center">Tan</td>
-                                                    <td class="text-center">M</td>
-                                                    <td class="text-center">012-3456789</td>
-                                                    <td class="text-center">2A-10-2, Waterfront Q1, Jalan Queens, 11900, Bayan Lepas, Pulau Pinang</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">SN0001</td>
+                                                    <td class="text-truncate text-break" style="max-width: 200px;">NS60R (46B24R) MF AMARON GO</td>
+                                                    <td class="text-center">Amaron</td>
                                                     <td class="text-center">6/9/2024</td>
-                                                    <td class="text-center">Active</td>
+                                                    <td class="text-center">6/9/2024</td>
+                                                    <td class="text-center">Khye Shen</td>
                                                     <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#modal-1"><i class="material-icons" id="showAlertBtn" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-truncate" style="max-width: 200px;">00002</td>
-                                                    <td class="text-truncate" style="max-width: 200px;">jackson11@gmail.com</td>
-                                                    <td class="text-center">Jackson</td>
-                                                    <td class="text-center">Wang</td>
-                                                    <td class="text-center">M</td>
-                                                    <td class="text-center">011-32789876</td>
-                                                    <td class="text-center">22-3, Menara KLCC, Jalan Ampang, 50450 Kuala Lumpur</td>
-                                                    <td class="text-center">16/4/2023</td>
-                                                    <td class="text-center">Frozen</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">SN0002</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">NX100-6L (55B24L) MF AMARON HI-LIFE</td>
+                                                    <td class="text-center">Amaron</td>
+                                                    <td class="text-center">6/9/2024</td>
+                                                    <td class="text-center">6/9/2024</td>
+                                                    <td class="text-center">Khye Shen</td>
                                                     <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-truncate" style="max-width: 200px;">00003</td>
-                                                    <td class="text-truncate" style="max-width: 200px;">chongwei12@gmail.com</td>
-                                                    <td class="text-center">Chong Wei</td>
-                                                    <td class="text-center">Lee</td>
-                                                    <td class="text-center">M</td>
-                                                    <td class="text-center">011-37485728</td>
-                                                    <td class="text-center">45-2-1, Block A, Bayan Mutiara, Jalan Mutiara 4, 11900 Bayan Lepas, Penang</td>
-                                                    <td class="text-center">19/9/2024</td>
-                                                    <td class="text-center">Active</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">SN0003</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">NS60R (46B24R) MF AMARON GO</td>
+                                                    <td class="text-center">Amaron</td>
+                                                    <td class="text-center">6/9/2024</td>
+                                                    <td class="text-center">6/9/2024</td>
+                                                    <td class="text-center">Khye Shen</td>
                                                     <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-truncate" style="max-width: 200px;">00004</td>
-                                                    <td class="text-truncate" style="max-width: 200px;">jennie13@gmail.com</td>
-                                                    <td class="text-center">Jennie</td>
-                                                    <td class="text-center">Ang</td>
-                                                    <td class="text-center">F</td>
-                                                    <td class="text-center">010-22449987</td>
-                                                    <td class="text-center">78, Jalan Sutera Tanjung 8/4, Taman Sutera Utama, 81300 Johor Bahru, Johor</td>
-                                                    <td class="text-center">15/3/2024</td>
-                                                    <td class="text-center">Active</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">SN0004</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">ELITO NS60</td>
+                                                    <td class="text-center">Elito</td>
+                                                    <td class="text-center">6/9/2024</td>
+                                                    <td class="text-center">6/9/2024</td>
+                                                    <td class="text-center">Khye Shen</td>
                                                     <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-truncate" style="max-width: 200px;">00005</td>
-                                                    <td class="text-truncate" style="max-width: 200px;">jacky14@gmail.com</td>
-                                                    <td class="text-center">Jacky</td>
-                                                    <td class="text-center">Liew</td>
-                                                    <td class="text-center">M</td>
-                                                    <td class="text-center">011-23654876</td>
-                                                    <td class="text-center">101, Lorong Lintas Plaza, Lintas, 88300 Kota Kinabalu, Sabah</td>
-                                                    <td class="text-center">23/1/2022</td>
-                                                    <td class="text-center">Active</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">SN0005</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">ELITO NS60</td>
+                                                    <td class="text-center">Elito</td>
+                                                    <td class="text-center">6/9/2024</td>
+                                                    <td class="text-center">6/9/2024</td>
+                                                    <td class="text-center">Khye Shen</td>
+                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-truncate" style="max-width: 200px;">SN0006</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">ELITO NS60</td>
+                                                    <td class="text-center">Elito</td>
+                                                    <td class="text-center">6/9/2024</td>
+                                                    <td class="text-center">6/9/2024</td>
+                                                    <td class="text-center">Khye Shen</td>
+                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-truncate" style="max-width: 200px;">SN0007</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">ELITO NS60</td>
+                                                    <td class="text-center">Elito</td>
+                                                    <td class="text-center">6/9/2024</td>
+                                                    <td class="text-center">6/9/2024</td>
+                                                    <td class="text-center">Khye Shen</td>
+                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-truncate" style="max-width: 200px;">SN0008</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">ELITO NS60</td>
+                                                    <td class="text-center">Elito</td>
+                                                    <td class="text-center">6/9/2024</td>
+                                                    <td class="text-center">10/9/2024</td>
+                                                    <td class="text-center">Eric</td>
+                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-truncate" style="max-width: 200px;">SN0009</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">ELITO NS60</td>
+                                                    <td class="text-center">Elito</td>
+                                                    <td class="text-center">6/9/2024</td>
+                                                    <td class="text-center">11/9/2024</td>
+                                                    <td class="text-center">Eric</td>
+                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-truncate" style="max-width: 200px;">SN0010</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">ELITO NS60</td>
+                                                    <td class="text-center">Elito</td>
+                                                    <td class="text-center">6/9/2024</td>
+                                                    <td class="text-center">11/9/2024</td>
+                                                    <td class="text-center">Eric</td>
+                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-truncate" style="max-width: 200px;">SN0011</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">ELITO NS60</td>
+                                                    <td class="text-center">Elito</td>
+                                                    <td class="text-center">6/9/2024</td>
+                                                    <td class="text-center">6/9/2024</td>
+                                                    <td class="text-center">Khye Shen</td>
+                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-truncate" style="max-width: 200px;">SN0012</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">ELITO NS60</td>
+                                                    <td class="text-center">Elito</td>
+                                                    <td class="text-center">6/9/2024</td>
+                                                    <td class="text-center">6/9/2024</td>
+                                                    <td class="text-center">Khye Shen</td>
                                                     <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                             </tbody>
@@ -234,42 +267,44 @@
                     </div>
                 </div>
             </div>
-            <footer class="bg-white sticky-footer">
-                <div class="container my-auto">
-                    <div class="text-center my-auto copyright"><span>Copyright © Brand 2024</span></div>
-                </div>
-            </footer>
+            
+            <!-- Footer Bar -->
+            <?php include 'Footer.php' ?>
+
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
     </div>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-1">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="addProductsOffcanvas">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title">Add User</h5><button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 class="offcanvas-title">Add Inventory</h5><button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body" style="border-color: rgb(255,255,255);">
             <div class="container">
                 <div class="row" style="margin-bottom: 10px;">
                     <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Email Address</p><input type="text" style="width: 100%;">
+                        <p style="margin-bottom: 2px;">Product Image</p><img src="assets/img/Battery.png" width="96" height="82">
                     </div>
                 </div>
                 <div class="row" style="margin-bottom: 10px;">
                     <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">First Name</p><input type="text" style="width: 100%;">
-                        <p style="margin-bottom: 2px;">Last Name</p><input type="text" style="width: 100%;">
-                    </div>
-                </div>
-                <div class="row" style="margin-bottom: 10px;">
-                    <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Gender</p>
-                        <div class="dropdown" style="width: 100%;height: 30px;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="color: rgb(0,0,0);background: rgb(255,255,255);width: 100%;text-align: left;border-color: rgb(136,136,136);height: 30px;padding: 2px 12px;">Gender</button>
-                            <div class="dropdown-menu" style="width: 100%;"><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">Male</a><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">Female</a></div>
+                        <p style="margin-bottom: 2px;">Product Name</p>
+                        <div class="dropdown" style="width: 100%;height: 30px;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="color: rgb(0,0,0);background: rgb(255,255,255);width: 100%;text-align: left;border-color: rgb(136,136,136);height: 30px;padding: 2px 12px;">Battery A</button>
+                            <div class="dropdown-menu" style="width: 100%;"><a class="dropdown-item" href="#">Battery A</a><a class="dropdown-item" href="#">Battery B</a><a class="dropdown-item" href="#">Battery C</a></div>
                         </div>
                     </div>
+                </div>
+                <div class="row" style="margin-bottom: 10px;">
                     <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Phone Number</p><input type="text" style="width: 100%;">
+                        <p style="margin-bottom: 2px;">Brand Name</p><input type="text" style="width: 100%;">
                     </div>
+                </div>
+                <div class="row" style="margin-bottom: 10px;">
                     <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Address</p><input type="text" style="width: 100%;">
+                        <p style="margin-bottom: 2px;">Serial Number</p><input type="text" style="width: 100%;">
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 20px;">
+                    <div class="col-md-12">
+                        <p style="margin-bottom: 2px;">Entry Date</p><input type="date" style="width: 100%;height: 30px;">
                     </div>
                 </div>
                 <div class="row">
@@ -280,37 +315,40 @@
     </div>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-2">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title">Edit User</h5><button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 class="offcanvas-title">Edit Inventory</h5><button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body" style="border-color: rgb(255,255,255);">
             <div class="container">
                 <div class="row" style="margin-bottom: 10px;">
                     <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Email Address</p><input type="text" style="width: 100%;" value="khyeshen91@gmail.com">
+                        <p style="margin-bottom: 2px;">Product Image</p><img src="assets/img/Battery.png" width="96" height="82">
                     </div>
                 </div>
                 <div class="row" style="margin-bottom: 10px;">
                     <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">First Name</p><input type="text" style="width: 100%;" value="Khye Shen">
-                        <p style="margin-bottom: 2px;">Last Name</p><input type="text" style="width: 100%;" value="Tan">
-                    </div>
-                </div>
-                <div class="row" style="margin-bottom: 10px;">
-                    <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Gender</p>
-                        <div class="dropdown" style="width: 100%;height: 30px;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="color: rgb(0,0,0);background: rgb(255,255,255);width: 100%;text-align: left;border-color: rgb(136,136,136);height: 30px;padding: 2px 12px;">Gender</button>
-                            <div class="dropdown-menu" style="width: 100%;"><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">Male</a><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">Female</a></div>
+                        <p style="margin-bottom: 2px;">Product Name</p>
+                        <div class="dropdown" style="width: 100%;height: 30px;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="color: rgb(0,0,0);background: rgb(255,255,255);width: 100%;text-align: left;border-color: rgb(136,136,136);height: 30px;padding: 2px 12px;">Battery A</button>
+                            <div class="dropdown-menu" style="width: 100%;"><a class="dropdown-item" href="#">Battery A</a><a class="dropdown-item" href="#">Battery B</a><a class="dropdown-item" href="#">Battery C</a></div>
                         </div>
                     </div>
+                </div>
+                <div class="row" style="margin-bottom: 10px;">
                     <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Phone Number</p><input type="text" style="width: 100%;" value="0123456789">
+                        <p style="margin-bottom: 2px;">Brand Name</p><input type="text" style="width: 100%;" value="Brand A">
                     </div>
+                </div>
+                <div class="row" style="margin-bottom: 10px;">
                     <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Address</p><input type="text" style="width: 100%;" value="2A-10-2, Waterfront Q1, Jalan Queens, 11900, Bayan Lepas, Pulau Pinang">
+                        <p style="margin-bottom: 2px;">Serial Number</p><input type="text" style="width: 100%;" value="SN001">
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 20px;">
+                    <div class="col-md-12">
+                        <p style="margin-bottom: 2px;">Entry Date</p><input type="date" style="width: 100%;height: 30px;" value="06/09/2024">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12 col-lg-10 text-end" style="width: 100%;"><button class="btn btn-primary" id="btnaddinventory-1" type="button" data-bs-dismiss="offcanvas" style="background: rgb(8,197,50);margin: 0px 10px;">Save</button><button class="btn btn-primary" type="button" data-bs-dismiss="offcanvas" style="background: rgb(231,74,59);">Cancel</button></div>
+                    <div class="col-md-12 col-lg-10 text-end" style="width: 100%;"><button class="btn btn-primary" type="button" data-bs-dismiss="offcanvas" style="background: rgb(78,115,223);margin: 0px 10px;">Edit</button><button class="btn btn-primary" type="button" data-bs-dismiss="offcanvas" style="background: rgb(231,74,59);">Cancel</button></div>
                 </div>
             </div>
         </div>

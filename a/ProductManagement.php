@@ -21,22 +21,10 @@
 
 <body id="page-top">
     <div id="wrapper">
-        <nav class="navbar navbar-dark bg-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" style="--bs-primary: #131318;--bs-primary-rgb: 19,19,24;color: rgb(24,24,25);background: var(--bs-black);">
-            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
-                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
-                    <div class="sidebar-brand-text mx-3"><span>Brand</span></div>
-                </a>
-                <hr class="sidebar-divider my-0">
-                <ul class="navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item"><a class="nav-link active" href="ProductManagement.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-user"></i><span>Profile</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="table.html"><i class="fas fa-table"></i><span>Table</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.html"><i class="far fa-user-circle"></i><span>Login</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="register.html"><i class="fas fa-user-circle"></i><span>Register</span></a></li>
-                </ul>
-                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
-            </div>
-        </nav>
+        
+        <!-- Navigation Bar -->
+        <?php include 'Nav.php' ?>
+
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
                 <nav class="navbar navbar-light navbar-expand bg-dark shadow mb-4 topbar static-top">
@@ -310,7 +298,7 @@
                                 <div class="modal-body">
                                     <p style="color: rgb(0,0,0);">Item has been successfully created!</p>
                                 </div>
-                                <div class="modal-footer"><a class="btn btn-primary" role="button" href="ProductManagement.html">Done</a></div>
+                                <div class="modal-footer"><a class="btn btn-primary" role="button" href="ProductManagement.php">Done</a></div>
                             </div>
                         </div>
                     </div>
@@ -323,7 +311,7 @@
                                 <div class="modal-body">
                                     <p style="color: rgb(0,0,0);">Changes has been successfully saved!</p>
                                 </div>
-                                <div class="modal-footer"><a class="btn btn-primary" role="button" href="ProductManagement.html">Done</a></div>
+                                <div class="modal-footer"><a class="btn btn-primary" role="button" href="ProductManagement.php">Done</a></div>
                             </div>
                         </div>
                     </div>
@@ -336,7 +324,7 @@
                                 <div class="modal-body">
                                     <p style="color: rgb(0,0,0);">Items has been successfully deleted!</p>
                                 </div>
-                                <div class="modal-footer"><a class="btn btn-primary" role="button" href="ProductManagement.html">Done</a></div>
+                                <div class="modal-footer"><a class="btn btn-primary" role="button" href="ProductManagement.php">Done</a></div>
                             </div>
                         </div>
                     </div>
@@ -349,7 +337,7 @@
                                 <div class="modal-body">
                                     <p style="color: rgb(0,0,0);">Items has been successfully discarded!</p>
                                 </div>
-                                <div class="modal-footer"><a class="btn btn-primary" role="button" href="ProductManagement.html">Done</a></div>
+                                <div class="modal-footer"><a class="btn btn-primary" role="button" href="ProductManagement.php">Done</a></div>
                             </div>
                         </div>
                     </div>
@@ -362,7 +350,7 @@
                                 <div class="modal-body">
                                     <p><span style="color: rgb(33, 37, 41);">Are you sure want to delete this item?</span></p>
                                 </div>
-                                <div class="modal-footer"><button class="btn btn-success" type="button" style="color: rgb(255,255,255);background: #0bbc1d;" data-bs-target="#deleteProductsModal_success" data-bs-toggle="modal">Yes</button><a class="btn btn-danger" role="button" href="ProductManagement.html" data-bs-target="#deleteProductsModal" data-bs-toggle="modal">No</a></div>
+                                <div class="modal-footer"><button class="btn btn-success" type="button" style="color: rgb(255,255,255);background: #0bbc1d;" data-bs-target="#deleteProductsModal_success" data-bs-toggle="modal">Yes</button><a class="btn btn-danger" role="button" href="ProductManagement.php" data-bs-target="#deleteProductsModal" data-bs-toggle="modal">No</a></div>
                             </div>
                         </div>
                     </div>
@@ -375,17 +363,16 @@
                                 <div class="modal-body">
                                     <p><span style="color: rgb(33, 37, 41);">Are you sure want to discard the changes?</span></p>
                                 </div>
-                                <div class="modal-footer"><button class="btn btn-success" type="button" style="color: rgb(255,255,255);background: #0bbc1d;" data-bs-target="#discardChangesModal_success" data-bs-toggle="modal">Yes</button><a class="btn btn-danger" role="button" href="ProductManagement.html" data-bs-target="#discardChangesModal" data-bs-toggle="modal">No</a></div>
+                                <div class="modal-footer"><button class="btn btn-success" type="button" style="color: rgb(255,255,255);background: #0bbc1d;" data-bs-target="#discardChangesModal_success" data-bs-toggle="modal">Yes</button><a class="btn btn-danger" role="button" href="ProductManagement.php" data-bs-target="#discardChangesModal" data-bs-toggle="modal">No</a></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <footer class="bg-white sticky-footer">
-                <div class="container my-auto">
-                    <div class="text-center my-auto copyright"><span>Copyright © Brand 2024</span></div>
-                </div>
-            </footer>
+            
+            <!-- Footer Bar -->
+            <?php include 'Footer.php' ?>
+
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
