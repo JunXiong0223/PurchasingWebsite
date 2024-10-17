@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Amaron</title>
+    <title>Product (2)</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi&amp;display=swap">
@@ -26,16 +26,16 @@
 </head>
 
 <body class="flex-column" style="display: flex;">
-    
-    <?php include 'Navi.php' ?>
+    <!-- Navigation Bar -->
+    <?php include 'Nav.php' ?>
 
     <main>
-        <div class="col-12 d-md-flex justify-content-md-center" style="text-align: center;font-size: 10px;"><img class="img-fluid d-md-flex justify-content-md-center rubberBand animated fit-cover" style="height: auto;width: 75%;margin-top: 0px;" src="assets/img/Screenshot%202024-06-01%20124830.png" width="499" height="407"></div>
+        <div class="col-12 d-md-flex justify-content-md-center" style="text-align: center;font-size: 10px;"><img class="img-fluid d-md-flex justify-content-md-center rubberBand animated fit-cover" style="height: auto;width: 100%;margin-top: 0px;" src="assets/img/banner%20(2).jpg" width="895" height="411"></div>
         <div class="col text-center" style="--bs-body-bg: transparent;background: var(--bs-teal);height: auto;padding: 8px;"><i class="fas fa-phone-alt" style="padding-right: 0px;margin-right: 10px;"></i><strong>03-2288-2888</strong></div>
-        <div class="col-12 d-md-flex justify-content-md-center" style="text-align: center;font-size: 10px;"><img class="img-fluid d-md-flex justify-content-md-center rubberBand animated fit-cover" style="height: auto;width: 75%;margin-top: 0px;" src="assets/img/Screenshot%202024-06-01%20124830.png" width="499" height="407"></div>
+        <div class="col-12 d-md-flex justify-content-md-center" style="text-align: center;font-size: 10px;"><img class="img-fluid d-md-flex justify-content-md-center rubberBand animated fit-cover" style="height: auto;width: 100%;margin-top: 0px;" src="assets/img/banner1.jpg" width="499" height="407"></div>
     </main>
-    
-    <?php include 'footer.php' ?>
+    <!-- Footer -->
+    <?php include 'Footer.php' ?>
 
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
