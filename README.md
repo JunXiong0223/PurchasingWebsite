@@ -43,8 +43,9 @@ Blocker and doubt:
 5- Project Tasks_v2.xlsx has uploaded to Github, please refer to excel file
 
 Reminder:
-1- put your name as the apendix of the design
-2- standardize the component like nav, data table, footer, alert, modal
+1- js untitled js
+2- standardize add/edit modal
+3- add return button to checkout page and admin order details
 
 USer nav - ZY Product detail
 User Footer - KS Product/Homepage, refer to /ks/static footer.txt
