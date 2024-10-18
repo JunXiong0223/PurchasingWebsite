@@ -21,6 +21,7 @@ JX:
 *Payment Record List -/JX/Admin Order/Admin Order/AdminPayment.html - Pending for Admin Navi
 Payment Record Details - On Hold for recepit template
 *User Profile - /JX/Profile/V2/Profile.html (Done)
+testing
 
 KS:
 Dashboard - /ks/Admin - Dashboard.html
