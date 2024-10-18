@@ -26,7 +26,7 @@
                 </ul>
             </div>
             <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last">
-                <h3 class="fs-4 text-white"><strong>Brand</strong></h3><img src="assets/img/Amaron%20header.jpg" width="63" height="64">
+                <h3 class="fs-4 text-white"><strong>Brands</strong></h3><img src="assets/img/Amaron%20header.jpg" width="63" height="64">
                 <figure class="figure"></figure>
             </div>
         </div>
