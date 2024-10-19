@@ -1,4 +1,13 @@
 ==============================
+Release Note v3.00
+Date: 19 October 2024
+==============================
+Cart & Product Details
+	- Modified HTML: Cart.html, ProductDetail.html
+	- Modified Javascript: ProductDetail.js
+	- Added NEW css: SearchBarDropdown.css, 
+
+==============================
 Release Note v2.00
 Date: 13 October 2024
 ==============================
