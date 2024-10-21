@@ -43,9 +43,10 @@ Blocker and doubt:
 5- Project Tasks_v2.xlsx has uploaded to Github, please refer to excel file
 
 Reminder:
-1- js untitled js
+1- Voucher module needed if more voucher is coming in future
 2- standardize add/edit modal
 3- add return button to checkout page and admin order details
+4- Revise project task if anything extra or out of consideration such as save payment method 
 
 USer nav - ZY Product detail
 User Footer - KS Product/Homepage, refer to /ks/static footer.txt
