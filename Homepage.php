@@ -32,7 +32,7 @@
     <main>
         <div class="col-12 d-md-flex justify-content-md-center" style="text-align: center;font-size: 10px;"><img class="img-fluid d-md-flex justify-content-md-center fit-cover" style="height: auto;width: 100%;margin-top: 0px;" src="assets/img/banner%20(2).jpg" width="895" height="411"></div>
         <div class="col text-center" style="--bs-body-bg: transparent;background: var(--bs-teal);height: auto;padding: 8px;"><i class="fas fa-phone-alt" style="padding-right: 0px;margin-right: 10px;"></i><strong><span style="text-decoration: underline;">03-2288-2888</span></strong></div>
-        <div class="col-12 d-md-flex justify-content-md-center" style="text-align: center;font-size: 10px;"><img class="img-fluid d-md-flex justify-content-md-center rubberBand animated fit-cover" style="height: auto;width: 100%;margin-top: 0px;" src="assets/img/banner1.jpg" width="499" height="407"></div>
+        <div class="col-12 d-md-flex justify-content-md-center" style="text-align: center;font-size: 10px;"><img class="img-fluid d-md-flex justify-content-md-center fit-cover" style="height: auto;width: 100%;margin-top: 0px;" src="assets/img/banner1.jpg" width="499" height="407"></div>
     </main>
     <!-- Footer -->
     <?php include 'Footer.php' ?>
