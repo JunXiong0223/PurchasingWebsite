@@ -46,7 +46,10 @@ Reminder:
 1- Voucher module needed if more voucher is coming in future
 2- standardize add/edit modal
 3- add return button to checkout page and admin order details
-4- Revise project task if anything extra or out of consideration such as save payment method 
+4- Revise project task if anything extra or out of consideration such as save payment method
+5- Checkout page - cannot revoke voucher discount
+6- Product Browsing page - only one or two products displayed in one row
+7- Add return button for product details page 
 
 USer nav - ZY Product detail
 User Footer - KS Product/Homepage, refer to /ks/static footer.txt

@@ -46,35 +46,3 @@ addToCartButton.addEventListener('click', function() {
     //cartCountElement.style.display = 'block';  // Make the badge visible
 });
 
-//Cart Function
-function increaseCartQuantity() {
-    var quantityInput = document.getElementById('CartQuantityInput');
-    var value = parseInt(quantityInput.value);
-    quantityInput.value = value + 1;
-}
-
-function decreaseCartQuantity() {
-    var quantityInput = document.getElementById('CartQuantityInput');
-    var value = parseInt(quantityInput.value);
-    if (value > 1) {
-        quantityInput.value = value - 1;
-    }
-}
-
-function increaseCartQuantity1() {
-    var quantityInput = document.getElementById('CartQuantityInput1');
-    var value = parseInt(quantityInput.value);
-    quantityInput.value = value + 1;
-}
-
-function decreaseCartQuantity1() {
-    var quantityInput = document.getElementById('CartQuantityInput1');
-    var value = parseInt(quantityInput.value);
-    if (value > 1) {
-        quantityInput.value = value - 1;
-    }
-}
-
-
-
-
