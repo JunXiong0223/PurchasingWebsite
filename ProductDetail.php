@@ -24,16 +24,16 @@
     <link rel="stylesheet" href="assets/css/StaticFooter.css">
 </head>
 
-<body class="flex-column" style="min-height: 100vh;display: flex;">
+<body>
     <!-- Navigation Bar -->
     <?php include 'Nav.php' ?>
-    
-    <div class="container" id="main">
+
+    <div class="container" style="margin-bottom: 20px;">
         <div class="alert alert-success d-none alert-dismissible" role="alert" id="successMessage"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             <h4 class="alert-heading">Succesful!</h4><span><strong>Item successfully added to cart</strong>.</span>
         </div>
         <div class="row">
-            <div class="col" style="text-align: center;"><img src="assets/img/duracelbattery-removebg-preview.png" width="330" height="250" style="margin-left: 0px;text-align: center;padding-top: 0px;margin-top: 50px;margin-bottom: 10px;"></div>
+            <div class="col" style="text-align: center;"><img src="assets/img/duracelbattery-removebg-preview.png" width="330" height="250" style="margin-left: 0px;text-align: center;padding-top: 0px;margin-bottom: 10px;margin-top: 20px;"></div>
             <div class="col">
                 <div class="row">
                     <div class="col d-flex align-items-center">
@@ -47,7 +47,7 @@
                     <div class="col" style="padding-right: 0px;padding-left: 0px;margin-bottom: 0px;text-align: right;">
                         <form class="d-inline-flex"><button class="btn btn-primary" type="button" onclick="decreasePDQuantity()" style="width: 38px;height: 38px;font-size: 20px;text-align: center;line-height: 0px;background: rgba(31,97,195,0);color: rgb(0,0,0);font-weight: bold;margin-right: 0px;border-radius: 50%;padding-left: 10px;border-width: 0px;border-color: rgba(33,37,41,0.35);"><i class="fas fa-minus" style="padding: 0px;padding-right: 0px;padding-left: 0px;font-size: 20px;"></i></button><input class="form-control" type="text" id="PDQuantityInput" style="width: 100px;text-align: center;font-weight: bold;" inputmode="numeric" pattern="\d*" value="1" autocomplete="off" required=""><button class="btn btn-primary" type="button" onclick="increasePDQuantity()" style="width: 38px;height: 38px;text-align: center;font-weight: bold;font-size: 20px;margin: 0px;margin-left: 0px;line-height: 0px;color: rgb(0,0,0);background: rgba(13,110,253,0);border-radius: 50%;margin-right: 10px;padding: 0px;padding-left: 2px;border-width: 0px;border-color: rgba(0,0,0,0.35);"><i class="fas fa-plus"></i></button></form>
                     </div>
-                </div><button class="btn btn-primary" id="btnaddtocart" type="button" style="font-size: 20px;width: 150px;border-radius: 20px;font-weight: bold;border-width: 0px;margin-right: 10px;margin-left: 10px;">Add to Cart</button><button class="btn btn-primary" type="button" style="width: 150px;font-size: 20px;border-radius: 20px;background: rgb(245,19,4);font-weight: bold;border-width: 0px;">Need Now</button>
+                </div><button class="btn btn-primary" id="btnaddtocart" type="button" style="font-size: 20px;width: 150px;border-radius: 20px;font-weight: bold;border-width: 0px;margin-right: 10px;">Add to Cart</button><button class="btn btn-primary" type="button" style="width: 150px;font-size: 20px;border-radius: 20px;background: rgb(245,19,4);font-weight: bold;border-width: 0px;">Need Now</button>
                 <div class="accordion" role="tablist" id="accordion-1" style="margin-top: 10px;margin-bottom: 10px;">
                     <div class="accordion-item">
                         <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="true" aria-controls="accordion-1 .item-1" style="font-weight: bold;">Description</button></h2>
@@ -83,10 +83,9 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
-    <script src="assets/js/Address.js"></script>
-    <script src="assets/js/checkout.js"></script>
     <script src="assets/js/ProductBrowsing.js"></script>
     <script src="assets/js/ProductDetail.js"></script>
+    <script src="assets/js/Profile.js"></script>
 </body>
 
 </html>
