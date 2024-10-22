@@ -91,6 +91,8 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Checkbox is not checked');
             // Hide the element
             document.getElementById('MemberPoint').style.display = 'none';
+            pointAmount = 0;
+            calculateTotalAmount();
         }
     });
 });
