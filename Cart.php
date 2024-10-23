@@ -25,10 +25,10 @@
 </head>
 
 <body>
-    <!-- Navigation Bar -->
+    <!-- Nav -->
     <?php include 'Nav.php' ?>
 
-    <div class="container-fluid" style="max-width: 850px;padding-top: 20px;padding-bottom: 20px;">
+    <div class="container-fluid" style="max-width: 850px;padding: 10px 12px;padding-bottom: 50px;">
         <div class="row">
             <div class="col-1 d-inline-flex"><a class="btn d-flex align-items-center" role="button" rel="prev" href="ProductDetail.php"><i class="fas fa-chevron-left fs-2"></i></a></div>
             <div class="col-10 d-flex justify-content-center align-items-center">
@@ -47,7 +47,7 @@
                             <div class="modal-body">
                                 <p>Are you sure want to delete this item?</p>
                             </div>
-                            <div class="modal-footer"><button class="btn btn-primary" type="button">Yes</button><button class="btn btn-light" type="button" data-bs-dismiss="modal">Cancel</button></div>
+                            <div class="modal-footer"><a class="btn btn-primary" role="button" href="Homepage.php">Yes</a><button class="btn btn-light" type="button" data-bs-dismiss="modal">Cancel</button></div>
                         </div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-1 d-flex justify-content-end" style="padding-right: 10px;padding-left: 0px;"><button class="btn d-flex d-xxl-flex align-items-start align-items-xxl-start" type="button" style="padding-right: 2px;padding-left: 0px;font-size: 24px;margin-right: 2px;" data-bs-target="#deleteItemPopupmsg" data-bs-toggle="modal"><i class="fas fa-trash-alt"></i></button></div>
+                    <div class="col-1 d-flex justify-content-end" style="padding-right: 10px;padding-left: 0px;"><button class="btn d-flex d-xxl-flex align-items-start align-items-xxl-start" type="button" style="padding: 0px 0px;padding-left: 0px;font-size: 24px;margin-right: 2px;height: 25px;width: 25px;" data-bs-target="#deleteItemPopupmsg" data-bs-toggle="modal"><i class="fas fa-trash-alt"></i></button></div>
                 </div>
                 <div class="row d-flex" style="background: #e3e0e0;padding-right: 10px;padding-left: 10px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;">
                     <div class="col d-flex d-xxl-flex align-items-center align-items-xxl-center">
@@ -85,15 +85,15 @@
             <div class="col d-xl-flex align-items-xl-center" style="padding-left: 20px;">
                 <h1 id="cartTotalPrice" style="font-size: 21px;margin-bottom: 0px;margin-left: 15px;line-height: 49.8px;text-align: left;width: 120px;padding-left: 0px;">RM 0.00</h1>
             </div>
-            <div class="col d-grid" style="padding-right: 0px;padding-left: 0px;"><button class="btn btn-primary" type="button" style="font-size: 20px;background: var(--bs-red);border-top-left-radius: 0px;border-bottom-left-radius: 0px;border-top-right-radius: 16px;border-bottom-right-radius: 16px;border-width: 0px;height: 50px;">&nbsp;Checkout</button></div>
+            <div class="col d-grid" style="padding-right: 0px;padding-left: 0px;"><a class="btn btn-primary" role="button" style="font-size: 20px;background: var(--bs-red);border-top-left-radius: 0px;border-bottom-left-radius: 0px;border-top-right-radius: 16px;border-bottom-right-radius: 16px;border-width: 0px;height: 50px;" href="CheckoutSearchAddress.php">&nbsp;Checkout</a></div>
         </div>
     </div>
     <!-- Footer -->
     <?php include 'Footer.php' ?>
     
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="assets/js/checkout.js"></script>
     <script src="assets/js/Cart.js"></script>
     <script src="assets/js/ProductBrowsing.js"></script>
     <script src="assets/js/Profile.js"></script>

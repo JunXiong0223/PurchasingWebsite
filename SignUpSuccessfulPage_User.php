@@ -45,8 +45,8 @@
     <?php include 'Footer.php' ?>
     
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="assets/js/checkout.js"></script>
     <script src="assets/js/ProductBrowsing.js"></script>
     <script src="assets/js/Profile.js"></script>
 </body>

@@ -25,20 +25,22 @@
 </head>
 
 <body class="d-flex flex-column" style="min-height: 100vh;">
-    <!-- Navigation Bar -->
+    <!-- Nav -->
     <?php include 'Nav.php' ?>
-
-    <div class="container-fluid" id="main" style="max-width: 850px;padding: 20px 12px;">
+    
+    <div class="container-fluid" id="main" style="max-width: 850px;padding: 10px 12px;padding-bottom: 50px;">
         <div class="row">
-            <div class="col">
-                <h1>Address</h1>
+            <div class="col-1 d-inline-flex"><a class="btn d-flex align-items-center" role="button" href="CheckoutSearchAddress.php" rel="prev"><i class="fas fa-chevron-left fs-2"></i></a></div>
+            <div class="col-10 d-flex justify-content-center align-items-center">
+                <h1 style="margin-bottom: 0px;">Address</h1>
             </div>
+            <div class="col-1"></div>
         </div>
+        <div class="col-12 text-start d-lg-flex align-items-lg-center" id="searchContainer" style="padding-top: 4px;padding-bottom: 4px;"><input type="search" id="searchBox" style="padding-bottom: 0px;padding-top: 0px;" placeholder="Search Location"><button class="btn btn-sm" id="searchButton" type="button" style="padding-bottom: 2px;padding-top: 2px;border-style: solid;border-color: var(--bs-btn-color);">Button</button></div>
         <div class="col">
-            <div class="text-end"><a class="btn" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1" role="button">Set Alternative Address</a>
+            <div class="text-center"><a class="btn" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1" role="button" style="border-color: #9a9a9a;background: #b7b7b7;margin: 10px 0px;">Set Alternative Address</a>
                 <div class="collapse show" id="collapse-1">
                     <div class="row">
-                        <div class="col-12 text-start d-lg-flex align-items-lg-center" id="searchContainer" style="padding-top: 4px;padding-bottom: 4px;"><input type="search" id="searchBox" style="padding-bottom: 0px;padding-top: 0px;" placeholder="Search Location"><button class="btn btn-sm" id="searchButton" type="button" style="padding-bottom: 2px;padding-top: 2px;border-style: solid;border-color: var(--bs-btn-color);">Button</button></div>
                         <div class="col-12" id="map"></div>
                         <div class="col-12" style="padding-bottom: 12px;">
                             <form>
@@ -111,9 +113,9 @@
     <?php include 'Footer.php' ?>
     
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
     <script src="assets/js/Address.js"></script>
+    <script src="assets/js/checkout.js"></script>
     <script src="assets/js/ProductBrowsing.js"></script>
     <script src="assets/js/Profile.js"></script>
 </body>

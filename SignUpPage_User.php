@@ -25,13 +25,7 @@
 </head>
 
 <body class="flex-column" style="display: flex;min-height: 100vh;">
-    <div class="container" id="main" style="margin-bottom: 10%;margin-right: 0px;margin-left: 0px;padding: 0px 0px;max-width: 100%;">
-        <!-- Banner -->
-        <div class="row d-block" style="margin: 0px 0px;">
-            <div class="col d-flex d-xxl-flex justify-content-center justify-content-xxl-center" style="padding-top: 0px;padding-right: 0px;padding-left: 0px;height: 88px;background: rgb(123,187,39);">
-                <img class="img-fluid d-xxl-flex justify-content-xxl-center w-100" src="assets/img/Amaron%20header.jpg" style="padding: 0px;padding-top: 0px;max-width: 226px;height: 88px;max-height: 226px;text-align: center;">
-            </div> 
-        </div>
+    <div class="container" id="main" style="margin: 0px 0px;margin-bottom: 10%;margin-right: 0px;margin-left: 0px;padding: 0px 0px;max-width: 100%;">
         <div class="row d-block" style="margin: 0px 0px;">
             <div class="col d-flex d-xxl-flex justify-content-center justify-content-xxl-center" style="padding-top: 0px;padding-right: 0px;padding-left: 0px;height: 88px;background: rgb(123,187,39);"><img class="img-fluid d-xxl-flex justify-content-xxl-center w-100" src="assets/img/Amaron%20header.jpg" style="padding: 0px;padding-top: 0px;max-width: 226px;height: 88px;max-height: 226px;text-align: center;"></div>
             <div class="col d-flex justify-content-center align-items-center" style="padding: 6px 12px;margin-top: 10%;">
@@ -51,8 +45,8 @@
     <?php include 'Footer.php' ?>
     
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="assets/js/checkout.js"></script>
     <script src="assets/js/ProductBrowsing.js"></script>
     <script src="assets/js/Profile.js"></script>
 </body>

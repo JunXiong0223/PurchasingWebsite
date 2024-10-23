@@ -25,19 +25,16 @@
 </head>
 
 <body class="d-flex flex-column" style="min-height: 100vh;">
-    <div class="container" id="main" style="max-width: 900px;padding: 20px 12px;">
-        <!-- Banner -->
-        <div class="row d-block" style="margin: 0px 0px;">
-            <div class="col d-flex d-xxl-flex justify-content-center justify-content-xxl-center" style="padding-top: 0px;padding-right: 0px;padding-left: 0px;height: 88px;background: rgb(123,187,39);">
-                <img class="img-fluid d-xxl-flex justify-content-xxl-center w-100" src="assets/img/Amaron%20header.jpg" style="padding: 0px;padding-top: 0px;max-width: 226px;height: 88px;max-height: 226px;text-align: center;">
-            </div> 
+    <div class="container" id="main" style="padding: 0px 0px;margin: 0px 0px;width: 100%;max-width: 100%;">
+        <div class="row d-block" style="margin: 0px 0px;width: 100%;">
+            <div class="col d-flex d-xxl-flex justify-content-center justify-content-xxl-center" style="padding-top: 0px;padding-right: 0px;padding-left: 0px;height: 88px;background: rgb(123,187,39);"><img class="img-fluid d-xxl-flex justify-content-xxl-center w-100" src="assets/img/Amaron%20header.jpg" style="padding: 0px;padding-top: 0px;max-width: 226px;height: 88px;max-height: 226px;text-align: center;"></div>
         </div>
         <div class="row" style="margin: 0px 0px;">
-            <div class="col-9 col-xxl-8 d-flex justify-content-center align-items-center justify-content-lg-center justify-content-xl-center justify-content-xxl-center" style="text-align: justify;padding: 0px;width: 100%;">
+            <div class="col-9 col-xxl-8 d-flex justify-content-center align-items-center justify-content-lg-center justify-content-xl-center justify-content-xxl-center" style="text-align: justify;padding: 0px;width: 100%;margin-top: 20px;">
                 <h1 class="d-xxl-flex justify-content-xxl-center align-items-xxl-center" style="margin-bottom: 0px;padding: 6px 0px;">Change Password</h1>
             </div>
         </div>
-        <form class="mx-auto justify-content-xxl-center changePasswordForm" style="max-width: 500px;margin-top: 20px;" novalidate="">
+        <form class="mx-auto justify-content-xxl-center changePasswordForm" style="max-width: 500px;padding: 20px 20px;padding-bottom: 50px;" novalidate="">
             <div class="row" style="margin-bottom: 10px;">
                 <div class="col">
                     <div><label class="form-label" style="margin-bottom: 0px;" for="CurrentPassword">Current Password</label><input class="form-control" type="password" id="CurrentPassword" placeholder="Current Password" required="" minlength="8" maxlength="16">
@@ -61,16 +58,16 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col d-flex justify-content-center justify-content-lg-center"><a class="btn btn-primary" role="button" style="border-radius: 25px;padding-right: 30px;padding-left: 30px;margin: 0px 5px;" href="Homepage.php">Confirm</a><a class="btn btn-primary" role="button" style="border-radius: 25px;padding-right: 30px;padding-left: 30px;margin: 0px 5px;--bs-danger: #dc3545;--bs-danger-rgb: 220,53,69;background: #dc3545;" href="Homepage.php">Cancel</a></div>
+                <div class="col d-flex justify-content-center justify-content-sm-center justify-content-lg-center"><button class="btn btn-primary" type="submit" style="border-radius: 25px;padding-right: 30px;padding-left: 30px;margin: 0px 10px;">Confirm</button><a class="btn btn-primary" role="button" style="border-radius: 25px;padding-right: 30px;padding-left: 30px;margin: 0px 10px;background: #dc3545;" href="LoginPage_User.php">Cancel</a></div>
             </div>
         </form>
     </div>
     <!-- Footer -->
     <?php include 'Footer.php' ?>
-    
+
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="assets/js/checkout.js"></script>
     <script src="assets/js/ProductBrowsing.js"></script>
     <script src="assets/js/Profile.js"></script>
 </body>

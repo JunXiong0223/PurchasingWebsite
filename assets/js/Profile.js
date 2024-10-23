@@ -66,7 +66,7 @@
         
 
         form.classList.add('was-validated');
-        window.location.href = "Homepage.html";
+        
         
       }, false);
     });
@@ -86,33 +86,18 @@ function comparePasswords(password, confirmPassword) {
 
 function EditProfileName()
 {
-  var FirstName = document.getElementById('FirstName');
-  var LastName = document.getElementById('LastName');
+  var first_name = document.getElementById('FirstName');
+  var last_name = document.getElementById('LastName');
 
-  if (FirstName.disabled && LastName.disabled)
+  if (first_name.disabled && last_name.disabled)
   {
-    FirstName.disabled = false;
-    LastName.disabled = false;
+    first_name.disabled = false;
+    last_name.disabled = false;
   }
   else
   {
-    FirstName.disabled = true;
-    LastName.disabled = true;
-  }
-
-}
-
-function EditEmail()
-{
-  var email = document.getElementById('email');
-
-  if (email.disabled)
-  {
-    email.disabled = false;
-  }
-  else
-  {
-    email.disabled = true;
+    first_name.disabled = true;
+    last_name.disabled = true;
   }
 
 }
@@ -128,6 +113,21 @@ function EditShippingAddress()
   else
   {
     address.disabled = true;
+  }
+
+}
+
+function EditEmail()
+{
+  var email = document.getElementById('email');
+
+  if (email.disabled)
+  {
+    email.disabled = false;
+  }
+  else
+  {
+    email.disabled = true;
   }
 
 }

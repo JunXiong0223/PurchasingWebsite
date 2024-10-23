@@ -25,15 +25,16 @@
 </head>
 
 <body class="d-flex flex-column" style="min-height: 100vh;">
-    <!-- Navigation Bar -->
+    <!-- Nav -->
     <?php include 'Nav.php' ?>
 
-    <div class="container-fluid" id="main" style="max-width: 850px;padding: 20px 12px;">
-        <div class="row" style="width: 100%;margin: 0px 0px;">
-            <div class="col-12 col-xl-3 col-xxl-5 offset-xxl-0" style="width: auto;">
-                <h1>Checkout</h1>
+    <div class="container-fluid" id="main" style="max-width: 850px;padding: 10px 12px;padding-bottom: 50px;">
+        <div class="row">
+            <div class="col-1 d-inline-flex"><a class="btn d-flex align-items-center" role="button" rel="prev" href="ProductDetail.php"><i class="fas fa-chevron-left fs-2"></i></a></div>
+            <div class="col-10 d-flex justify-content-center align-items-center">
+                <h1 style="margin-bottom: 0px;">Checkout</h1>
             </div>
-            <div class="col" style="text-align: right;width: auto;padding: 0px 0px;"><a class="btn btn-primary" role="button" style="border-width: 0px;background: rgba(13,110,253,0);text-align: right;" href="Cart.php"><i class="fas fa-times" style="text-align: right;color: rgb(0,0,0);font-size: 25px;"></i></a></div>
+            <div class="col-1"></div>
         </div>
         <ul class="list-group" style="margin-top: 10px;margin-bottom: 10px;">
             <li class="list-group-item product-1" style="border-width: 0px;box-shadow: 0px 0px 2px;padding-left: 12px;padding-right: 12px;padding-bottom: 0px;border-bottom-right-radius: 10px;border-bottom-left-radius: 10px;">
@@ -57,7 +58,7 @@
                 </div>
                 <div class="row d-flex" style="background: #e3e0e0;padding-right: 10px;padding-left: 10px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;">
                     <div class="col d-flex d-xxl-flex align-items-center align-items-xxl-center">
-                        <h3 class="text-break d-xxl-flex align-items-xxl-center">Total (<span id="productQuantity" style="margin-right: 5px;"></span> Items)</h3>
+                        <h3 class="text-break d-xxl-flex align-items-xxl-center">Total (<span id="productQuantity"></span> Items)</h3>
                     </div>
                     <div class="col-auto justify-content-center align-items-end align-content-stretch">
                         <h3 class="text-break text-start" id="productTotalPrice"></h3>
@@ -73,10 +74,11 @@
                 <h3 class="border rounded-pill" style="margin-top: 10px;padding: 0px;padding-left: 10px;padding-right: 10px;padding-top: 0px;font-size: 16px;">Home</h3>
             </div>
             <div class="col-12">
-                <p class="text-break">Tan Khye Shen</p>
-                <p class="text-break">0123456789</p>
-                <p class="text-break">khyeshen91@gmail.com</p>
-                <p class="text-break">2A-10-2, Waterfront Q1, Jalan Queens,<br>11900, Bayan Lepas, Pulau Pinang</p>
+                <p class="text-break">Name</p>
+                <p class="text-break">Contact No</p>
+                <p class="text-break">Email</p>
+                <p class="text-break">Address</p>
+                <p class="text-break">Address</p>
             </div>
             <div class="col-12 text-end"><a class="btn btn-danger btn-sm" role="button" style="padding-right: 8px;" href="Address.php">Change</a></div>
         </div>
@@ -134,14 +136,13 @@
             <div class="col d-xl-flex align-items-xl-center" style="padding-left: 20px;">
                 <h1 id="FinalPrice" style="font-size: 34px;margin-bottom: 0px;margin-left: 19px;"></h1>
             </div>
-            <div class="col d-grid" style="padding-right: 0px;padding-left: 0px;"><button class="btn btn-primary" type="button" style="font-size: 28px;background: var(--bs-red);border-top-left-radius: 0px;border-bottom-left-radius: 0px;border-top-right-radius: 16px;border-bottom-right-radius: 16px;border-width: 0px;">Proceed</button></div>
+            <div class="col d-grid" style="padding-right: 0px;padding-left: 0px;"><a class="btn btn-primary" role="button" style="font-size: 28px;background: var(--bs-red);border-top-left-radius: 0px;border-bottom-left-radius: 0px;border-top-right-radius: 16px;border-bottom-right-radius: 16px;border-width: 0px;" href="Order.php">Proceed</a></div>
         </div>
     </div>
     <!-- Footer -->
     <?php include 'Footer.php' ?>
     
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
     <script src="assets/js/checkout.js"></script>
     <script src="assets/js/ProductBrowsing.js"></script>

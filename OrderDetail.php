@@ -25,10 +25,10 @@
 </head>
 
 <body class="d-flex flex-column" style="min-height: 100vh;">
-    <!-- Navigation Bar -->
+    <!-- Nav -->
     <?php include 'Nav.php' ?>
 
-    <div class="container" id="main" style="max-width: 850px;">
+    <div class="container" id="main" style="max-width: 850px;padding: 10px 12px;padding-bottom: 50px;">
         <div class="row">
             <div class="col-1 d-inline-flex"><a class="btn d-flex align-items-center" role="button" rel="prev" href="Order.php" style="padding: 20px 12px;"><i class="fas fa-chevron-left fs-2"></i></a></div>
             <div class="col-10 d-flex justify-content-center align-items-center">
@@ -153,8 +153,8 @@
     <?php include 'Footer.php' ?>
     
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="assets/js/checkout.js"></script>
     <script src="assets/js/ProductBrowsing.js"></script>
     <script src="assets/js/Profile.js"></script>
 </body>

@@ -25,10 +25,10 @@
 </head>
 
 <body class="d-flex flex-column" style="min-height: 100vh;">
-    <!-- Navigation Bar -->
+    <!-- Nav -->
     <?php include 'Nav.php' ?>
 
-    <div class="container" id="main" style="max-width: 850px;padding: 20px 12px;">
+    <div class="container" id="main" style="max-width: 850px;padding: 10px 12px;padding-bottom: 50px;">
         <div class="row">
             <div class="col-1 d-inline-flex"><a class="btn d-flex align-items-center" role="button" rel="prev" href="Homepage.php"><i class="fas fa-chevron-left fs-2"></i></a></div>
             <div class="col-10 d-flex justify-content-center align-items-center">
@@ -38,12 +38,12 @@
         </div>
         <div style="margin-top: 20px;">
             <ul class="nav nav-pills nav-justified" role="tablist" style="padding-bottom: 5px;">
-                <li class="nav-item" role="presentation" style="border-radius: 0px;border-color: rgb(255,255,255);"><a class="nav-link active custom" role="tab" data-bs-toggle="pill" href="#tab-1" style="border-radius: 25px;">Delivered</a></li>
+                <li class="nav-item" role="presentation" style="border-radius: 0px;border-color: rgb(255,255,255);"><a class="nav-link custom" role="tab" data-bs-toggle="pill" href="#tab-1" style="border-radius: 25px;">Delivered</a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link custom" role="tab" data-bs-toggle="pill" href="#tab-2" style="margin-bottom: 5px;border-radius: 25px;/*background-color: red;*/">Processing</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link custom" role="tab" data-bs-toggle="pill" href="#tab-3" style="border-radius: 25px;">Cancelled</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active custom" role="tab" data-bs-toggle="pill" href="#tab-3" style="border-radius: 25px;">Cancelled</a></li>
             </ul>
             <div class="tab-content">
-                <div class="tab-pane active" role="tabpanel" id="tab-1">
+                <div class="tab-pane" role="tabpanel" id="tab-1">
                     <ul class="list-group">
                         <li class="list-group-item" style="margin-bottom: 10px;margin-top: 10px;border-width: 2px;border-radius: 10px;box-shadow: 0px 0px 4px 1px;">
                             <div class="row">
@@ -68,7 +68,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-6"><button class="btn" type="button" style="font-style: italic;border-radius: 22px;border-color: var(--bs-list-group-color);padding-right: 30px;padding-left: 30px;">Details</button></div>
+                                <div class="col-6"><a class="btn" role="button" style="font-style: italic;border-radius: 22px;border-color: var(--bs-list-group-color);padding-right: 30px;padding-left: 30px;" href="OrderDetail.php">Details</a></div>
                                 <div class="col-6 text-end">
                                     <h3 style="margin-bottom: 0px;font-family: Abel, sans-serif;">Deliverd</h3>
                                 </div>
@@ -109,7 +109,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="tab-pane" role="tabpanel" id="tab-3">
+                <div class="tab-pane active" role="tabpanel" id="tab-3">
                     <ul class="list-group">
                         <li class="list-group-item" style="margin-bottom: 10px;margin-top: 10px;border-width: 2px;border-radius: 10px;box-shadow: 0px 0px 4px 1px;">
                             <div class="row">
@@ -134,7 +134,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-6"><button class="btn" type="button" style="font-style: italic;border-radius: 22px;border-color: var(--bs-list-group-color);padding-right: 30px;padding-left: 30px;">Details</button></div>
+                                <div class="col-6"><a class="btn" role="button" style="font-style: italic;border-radius: 22px;border-color: var(--bs-list-group-color);padding-right: 30px;padding-left: 30px;" href="OrderDetail.php">Details</a></div>
                                 <div class="col-6 text-end">
                                     <h3 style="margin-bottom: 0px;font-family: Abel, sans-serif;">Cancelled</h3>
                                 </div>
@@ -149,8 +149,8 @@
     <?php include 'Footer.php' ?>
     
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="assets/js/checkout.js"></script>
     <script src="assets/js/ProductBrowsing.js"></script>
     <script src="assets/js/Profile.js"></script>
 </body>

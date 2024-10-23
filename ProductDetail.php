@@ -25,16 +25,16 @@
 </head>
 
 <body>
-    <!-- Navigation Bar -->
+    <!-- Nav -->
     <?php include 'Nav.php' ?>
 
-    <div class="container" style="margin-bottom: 20px;">
+    <div class="container" style="padding: 10px 12px;padding-bottom: 50px;">
         <div class="alert alert-success d-none alert-dismissible" role="alert" id="successMessage"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             <h4 class="alert-heading">Succesful!</h4><span><strong>Item successfully added to cart</strong>.</span>
         </div>
         <div class="row">
             <div class="col" style="text-align: center;"><img src="assets/img/duracelbattery-removebg-preview.png" width="330" height="250" style="margin-left: 0px;text-align: center;padding-top: 0px;margin-bottom: 10px;margin-top: 20px;"></div>
-            <div class="col">
+            <div class="col" style="padding: 20px 12px;">
                 <div class="row">
                     <div class="col d-flex align-items-center">
                         <h3 class="text-break d-flex align-items-center" style="font-weight: bold;height: 80px;padding-top: 0px;padding-bottom: 0px;line-height: 24.6px;text-align: left;">Duracell Ultra Car Battery – 12V, 750 CCA</h3>
@@ -81,8 +81,8 @@
     <?php include 'Footer.php' ?>
     
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="assets/js/checkout.js"></script>
     <script src="assets/js/ProductBrowsing.js"></script>
     <script src="assets/js/ProductDetail.js"></script>
     <script src="assets/js/Profile.js"></script>

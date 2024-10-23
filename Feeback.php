@@ -25,10 +25,10 @@
 </head>
 
 <body class="flex-column" style="min-height: 100vh;display: flex;">
-    <!-- Navigation Bar -->
+    <!-- Nav -->
     <?php include 'Nav.php' ?>
 
-    <div class="container main">
+    <div class="container main" style="padding: 10px 12px;padding-bottom: 50px;">
         <form class="text-start" style="margin: 10px;">
             <div>
                 <h1 class="text-center">Feedback Form</h1>
@@ -45,15 +45,15 @@
             <div class="mb-3"><small>Feedback</small>
                 <div class="input-group"><textarea class="form-control" style="height: 278px;border-width: 1px;border-color: rgb(0,7,14);"></textarea></div>
             </div>
-            <div class="text-center"><button class="btn btn-primary text-center" type="button" style="margin: 0px 5px;border-radius: 25px;">Submit</button><button class="btn btn-primary text-center" type="button" style="margin: 0px 5px;background: var(--bs-red);border-radius: 25px;padding: 20px 12px;">Cancel</button></div>
+            <div class="text-center"><a class="btn btn-primary text-center" role="button" style="margin: 0px 5px;border-radius: 25px;" href="Homepage.php">Submit</a><a class="btn btn-primary text-center" role="button" style="margin: 0px 5px;background: var(--bs-red);border-radius: 25px;padding: 6px 12px;" href="Homepage.php">Cancel</a></div>
         </form>
     </div>
     <!-- Footer -->
     <?php include 'Footer.php' ?>
     
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="assets/js/checkout.js"></script>
     <script src="assets/js/ProductBrowsing.js"></script>
     <script src="assets/js/Profile.js"></script>
 </body>

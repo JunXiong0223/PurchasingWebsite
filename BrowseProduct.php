@@ -25,10 +25,10 @@
 </head>
 
 <body class="flex-column" style="min-height: 100vh;display: flex;">
-    <!-- Navigation Bar -->
+    <!-- Nav -->
     <?php include 'Nav.php' ?>
-
-    <div class="container main" style="padding: 20px 12px;">
+    
+    <div class="container main" style="padding: 10px 12px;padding-bottom: 50px;">
         <div class="row">
             <div class="col-6" style="padding: 6px 12px;">
                 <h5>All Products</h5>
@@ -116,10 +116,10 @@
     </div>
     <!-- Footer -->
     <?php include 'Footer.php' ?>
-    
+
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="assets/js/checkout.js"></script>
     <script src="assets/js/ProductBrowsing.js"></script>
     <script src="assets/js/Profile.js"></script>
 </body>

@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="assets/css/Font%20Awesome%205%20Brands.css">
     <link rel="stylesheet" href="assets/css/Font%20Awesome%205%20Free.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/Footer-Dark-Multi-Column-icons.css">
     <link rel="stylesheet" href="assets/css/Navbar-Fixed-Side-navbar-fixed-side.css">
     <link rel="stylesheet" href="assets/css/fonts/fontawesome-all.min.css">
@@ -26,7 +25,7 @@
 </head>
 
 <body class="flex-column" style="display: flex;">
-    <!-- Navigation Bar -->
+    <!-- Nav -->
     <?php include 'Nav.php' ?>
 
     <main>
@@ -37,12 +36,10 @@
     <!-- Footer -->
     <?php include 'Footer.php' ?>
     
-    <!-- WhatsApp -->
     <a class="btn btn-primary d-flex justify-content-center align-items-center float" role="button" style="margin-right: -15px;background: #25D366;border-color: rgba(255,255,255,0);box-shadow: 3px 2px 10px rgb(0,0,0);" href="https://api.whatsapp.com/send?phone=0149536877&amp;text=Hi"><i class="fab fa-whatsapp" style="font-size: 40px;"></i></a>
-        
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="assets/js/checkout.js"></script>
     <script src="assets/js/ProductBrowsing.js"></script>
     <script src="assets/js/Profile.js"></script>
 </body>

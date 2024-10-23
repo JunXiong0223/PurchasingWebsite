@@ -25,13 +25,13 @@
 </head>
 
 <body class="d-flex flex-column" style="min-height: 100vh;">
-    <!-- Navigation Bar -->
+    <!-- Nav -->
     <?php include 'Nav.php' ?>
-
-    <div class="container" id="main" style="max-width: 900px;padding: 20px 12px;">
+    
+    <div class="container" id="main" style="max-width: 500px;padding: 10px 20px;padding-bottom: 50px;">
         <div class="row">
             <div class="col-1 d-flex justify-content-center align-items-center"><a class="btn" role="button" href="Homepage.php"><i class="fas fa-chevron-left" style="font-size: 36px;"></i></a></div>
-            <div class="col d-flex justify-content-start align-items-center">
+            <div class="col d-flex justify-content-center align-items-center justify-content-xl-center">
                 <h1 style="margin-bottom: 0px;">Profile</h1>
             </div>
             <div class="col-1"></div>
@@ -41,13 +41,13 @@
                 <div class="col">
                     <div><label class="form-label" style="margin-bottom: 0px;"><strong>First Name</strong></label><input class="form-control" type="text" id="FirstName" disabled="" value="Khye Shen"><label class="form-label" style="margin-bottom: 0px;"><strong>Last Name</strong></label><input class="form-control" type="text" id="LastName" disabled="" value="Tan"></div>
                 </div>
-                <div class="col-1 d-flex justify-content-center align-items-center"><button class="btn" id="EditNameEmail" type="button" style="padding: 0px;" onclick="EditProfileName()"><i class="far fa-edit" style="font-size: 20px;"></i></button></div>
+                <div class="col-1 d-flex justify-content-center align-items-center"><button class="btn" id="EditProfile" type="button" style="padding: 0px;" onclick="EditProfileName()"><i class="far fa-edit" style="font-size: 20px;"></i></button></div>
             </div>
             <div class="row" style="margin-bottom: 10px;">
                 <div class="col">
                     <div><label class="form-label" style="margin-bottom: 0px;"><strong>Email Address</strong></label><input class="form-control" type="text" id="email" disabled="" value="khyeshen91@gmail.com"></div>
                 </div>
-                <div class="col-1 d-flex justify-content-center align-items-center"><button class="btn" id="EditNameEmail-1" type="button" style="padding: 0px;" onclick="EditEmail()"><i class="far fa-edit" style="font-size: 20px;"></i></button></div>
+                <div class="col-1 d-flex justify-content-center align-items-center"><button class="btn" id="Editemail" type="button" style="padding: 0px;" onclick="EditEmail()"><i class="far fa-edit" style="font-size: 20px;"></i></button></div>
             </div>
             <div class="row" style="margin-bottom: 10px;">
                 <div class="col">
@@ -73,7 +73,7 @@
                 </div>
                 <div class="col-1 d-flex justify-content-center align-items-center"><button class="btn" id="EditPaymentMethod" type="button" style="padding: 0px;"><i class="far fa-edit" style="font-size: 20px;"></i></button></div>
             </div>
-            <div class="row" style="margin-bottom: 10px;">
+            <div class="row">
                 <div class="col">
                     <div><label class="form-label" style="margin-bottom: 0px;"><strong>Password</strong></label></div><input class="form-control" type="password" disabled="" value="***************">
                 </div>
@@ -83,10 +83,10 @@
     </div>
     <!-- Footer -->
     <?php include 'Footer.php' ?>
-    
+
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="assets/js/checkout.js"></script>
     <script src="assets/js/ProductBrowsing.js"></script>
     <script src="assets/js/Profile.js"></script>
 </body>

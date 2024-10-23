@@ -25,10 +25,10 @@
 </head>
 
 <body>
-    <!-- Navigation Bar -->
+    <!-- Nav -->
     <?php include 'Nav.php' ?>
 
-    <div class="container" style="padding: 20px 12px;">
+    <div class="container" style="padding: 10px 12px;padding-bottom: 50px;">
         <div class="row">
             <div class="col-1 text-center d-flex justify-content-center align-items-center" style="padding: 0px;width: 65px;"><a class="btn btn-primary" role="button" style="color: rgb(0,0,0);background: rgba(255,255,255,0);padding: 6px 12px;border-width: 0px;" href="BrowseProduct.php"><i class="fas fa-arrow-left" style="font-size: 20px;"></i></a></div>
             <div class="col-5" style="padding: 6px 0px;">
@@ -46,7 +46,7 @@
                     <div class="card-header" style="background: rgba(217,217,217,0.6);"><img class="img-fluid" src="assets/img/duracelbattery-removebg-preview.png"></div>
                     <div class="card-body">
                         <h4 class="card-title">Battery A</h4>
-                        <h6>RM999.99</h6><button class="btn btn-primary" type="button">View more...</button>
+                        <h6>RM999.99</h6><a class="btn btn-primary" role="button" href="ProductDetail.php">View more...</a>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                     <div class="card-header" style="background: rgba(217,217,217,0.6);"><img class="img-fluid" src="assets/img/duracelbattery-removebg-preview.png"></div>
                     <div class="card-body">
                         <h4 class="card-title">Battery A</h4>
-                        <h6>RM999.99</h6><button class="btn btn-primary" type="button">View more...</button>
+                        <h6>RM999.99</h6><a class="btn btn-primary" role="button" href="ProductDetail.php">View more...</a>
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                     <div class="card-header" style="background: rgba(217,217,217,0.6);"><img class="img-fluid" src="assets/img/duracelbattery-removebg-preview.png"></div>
                     <div class="card-body">
                         <h4 class="card-title">Battery A</h4>
-                        <h6>RM999.99</h6><button class="btn btn-primary" type="button">View more...</button>
+                        <h6>RM999.99</h6><a class="btn btn-primary" role="button" href="ProductDetail.php">View more...</a>
                     </div>
                 </div>
             </div>
@@ -73,7 +73,7 @@
                     <div class="card-header" style="background: rgba(217,217,217,0.6);"><img class="img-fluid" src="assets/img/duracelbattery-removebg-preview.png"></div>
                     <div class="card-body">
                         <h4 class="card-title">Battery A</h4>
-                        <h6>RM999.99</h6><button class="btn btn-primary" type="button">View more...</button>
+                        <h6>RM999.99</h6><a class="btn btn-primary" role="button" href="ProductDetail.php">View more...</a>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@
                     <div class="card-header" style="background: rgba(217,217,217,0.6);"><img class="img-fluid" src="assets/img/duracelbattery-removebg-preview.png"></div>
                     <div class="card-body">
                         <h4 class="card-title">Battery A</h4>
-                        <h6>RM999.99</h6><button class="btn btn-primary" type="button">View more...</button>
+                        <h6>RM999.99</h6><a class="btn btn-primary" role="button" href="ProductDetail.php">View more...</a>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                     <div class="card-header" style="background: rgba(217,217,217,0.6);"><img class="img-fluid" src="assets/img/duracelbattery-removebg-preview.png"></div>
                     <div class="card-body">
                         <h4 class="card-title">Battery A</h4>
-                        <h6>RM999.99</h6><button class="btn btn-primary" type="button">View more...</button>
+                        <h6>RM999.99</h6><a class="btn btn-primary" role="button" href="ProductDetail.php">View more...</a>
                     </div>
                 </div>
             </div>
@@ -101,8 +101,8 @@
     <?php include 'Footer.php' ?>
     
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="assets/js/checkout.js"></script>
     <script src="assets/js/ProductBrowsing.js"></script>
     <script src="assets/js/Profile.js"></script>
 </body>
