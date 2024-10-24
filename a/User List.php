@@ -20,12 +20,11 @@
     <link rel="stylesheet" href="assets/css/TableCell_CenteredStatus.css">
 </head>
 
-<body id="page-top">
+<body id="page-top" style="border-color: rgba(33,37,41,0);">
     <div id="wrapper">
-        
         <!-- Navigation Bar -->
         <?php include 'Nav.php' ?>
-
+        
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
                 <nav class="navbar navbar-light navbar-expand bg-dark shadow mb-4 topbar static-top">
@@ -132,7 +131,7 @@
                                         <div class="col-xl-10 col-xxl-10" style="padding: 0px;">
                                             <h1 style="margin: 0px 0px;margin-bottom: 0px;">User Management</h1>
                                         </div>
-                                        <div class="col-xxl-2 text-center d-xxl-flex justify-content-xxl-end align-items-xxl-center" style="padding: 0px;"><button class="btn btn-primary" type="button" style="width: 95px;font-weight: bold;color: rgb(255,255,255);background: #0bbc1d;border-width: 0px;" data-bs-target="#offcanvas-1" data-bs-toggle="offcanvas"><i class="fas fa-plus-square" style="border-color: rgb(255,255,255);color: rgb(255,255,255);background: rgba(255,255,255,0);font-size: 18px;"></i>&nbsp; Add</button></div>
+                                        <div class="col-xxl-2 text-center d-xxl-flex justify-content-xxl-end align-items-xxl-center" style="padding: 0px;"><a class="btn btn-primary" role="button" style="width: 95px;font-weight: bold;color: rgb(255,255,255);background: #0bbc1d;border-width: 0px;" data-bs-target="#addUserOffcanvas" data-bs-toggle="offcanvas"><i class="fas fa-plus-square" style="border-color: rgb(255,255,255);color: rgb(255,255,255);background: rgba(255,255,255,0);font-size: 18px;"></i>&nbsp; Add</a></div>
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -163,7 +162,7 @@
                                                     <td class="text-center">2A-10-2, Waterfront Q1, Jalan Queens, 11900, Bayan Lepas, Pulau Pinang</td>
                                                     <td class="text-center">6/9/2024</td>
                                                     <td class="text-center">Active</td>
-                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#modal-1"><i class="material-icons" id="showAlertBtn" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#editUserOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" id="showAlertBtn" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-truncate" style="max-width: 200px;">00002</td>
@@ -175,7 +174,7 @@
                                                     <td class="text-center">22-3, Menara KLCC, Jalan Ampang, 50450 Kuala Lumpur</td>
                                                     <td class="text-center">16/4/2023</td>
                                                     <td class="text-center">Frozen</td>
-                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#editUserOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-truncate" style="max-width: 200px;">00003</td>
@@ -187,7 +186,7 @@
                                                     <td class="text-center">45-2-1, Block A, Bayan Mutiara, Jalan Mutiara 4, 11900 Bayan Lepas, Penang</td>
                                                     <td class="text-center">19/9/2024</td>
                                                     <td class="text-center">Active</td>
-                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#editUserOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-truncate" style="max-width: 200px;">00004</td>
@@ -199,7 +198,7 @@
                                                     <td class="text-center">78, Jalan Sutera Tanjung 8/4, Taman Sutera Utama, 81300 Johor Bahru, Johor</td>
                                                     <td class="text-center">15/3/2024</td>
                                                     <td class="text-center">Active</td>
-                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#editUserOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-truncate" style="max-width: 200px;">00005</td>
@@ -211,7 +210,7 @@
                                                     <td class="text-center">101, Lorong Lintas Plaza, Lintas, 88300 Kota Kinabalu, Sabah</td>
                                                     <td class="text-center">23/1/2022</td>
                                                     <td class="text-center">Active</td>
-                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#editUserOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -222,88 +221,85 @@
                     </div>
                 </div>
             </div>
-            
             <!-- Footer Bar -->
             <?php include 'Footer.php' ?>
 
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
     </div>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-1">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="addUserOffcanvas">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title">Add User</h5><button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 class="offcanvas-title"></h5><button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body" style="border-color: rgb(255,255,255);">
-            <div class="container">
-                <div class="row" style="margin-bottom: 10px;">
-                    <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Email Address</p><input type="text" style="width: 100%;">
-                    </div>
+        <div class="offcanvas-body">
+            <div class="row">
+                <div class="col" style="width: 250px;">
+                    <h4 class="text-nowrap" style="width: 146px;">Add User</h4>
                 </div>
-                <div class="row" style="margin-bottom: 10px;">
-                    <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">First Name</p><input type="text" style="width: 100%;">
-                        <p style="margin-bottom: 2px;">Last Name</p><input type="text" style="width: 100%;">
-                    </div>
+                <div class="col-lg-6" style="text-align: right;"><button class="btn btn-success" id="btnaddinventory" type="button" style="background: rgb(11,188,29);width: 50px;height: 50px;margin-right: 5px;border-width: 0px;" data-bs-target="#addUserOffcanvas" data-bs-toggle="offcanvas"><i class="fas fa-plus-square" style="font-size: 25px;color: rgb(255,255,255);"></i></button><button class="btn btn-danger" type="button" style="width: 50px;height: 50px;border-width: 0px;" data-bs-target="#DiscardModal" data-bs-toggle="modal"><i class="fas fa-trash-alt" style="font-size: 25px;"></i></button></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p style="padding: 6px 12px;color: rgb(255,15,0);font-weight: bold;font-style: italic;font-size: 11px;">Attention please!<br>The operations you make here will affect at user account.</p>
                 </div>
-                <div class="row" style="margin-bottom: 10px;">
-                    <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Gender</p>
-                        <div class="dropdown" style="width: 100%;height: 30px;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="color: rgb(0,0,0);background: rgb(255,255,255);width: 100%;text-align: left;border-color: rgb(136,136,136);height: 30px;padding: 2px 12px;">Gender</button>
-                            <div class="dropdown-menu" style="width: 100%;"><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">Male</a><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">Female</a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Phone Number</p><input type="text" style="width: 100%;">
-                    </div>
-                    <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Address</p><input type="text" style="width: 100%;">
-                    </div>
+            </div>
+            <form style="background: #eaeaea;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;">Email Address</label><input class="form-control" type="text" placeholder="-"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;">First Name</label><input class="form-control" type="text" placeholder="-"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;">Last Name</label><input class="form-control" type="text" placeholder="-"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;">Gender</label>
+                <div class="dropdown"><button class="btn btn-primary dropdown-toggle form-control" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;background: rgb(255,255,255);color: rgb(0,0,0);border-color: rgba(0,0,0,0.24);">Gender</button>
+                    <div class="dropdown-menu form-control" style="width: 100%;"><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">Male</a><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">Female</a></div>
+                </div><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;">Phone Number</label><input class="form-control" type="text" placeholder="-"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;">Shipping Address</label><textarea class="form-control" placeholder="-" rows="3" wrap="soft"></textarea>
+            </form>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="editUserOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title"></h5><button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row">
+                <div class="col" style="width: 250px;">
+                    <h4 class="text-nowrap" style="width: 146px;">Edit User</h4>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 col-lg-10 text-end" style="width: 100%;"><button class="btn btn-primary" id="btnaddinventory" type="button" data-bs-dismiss="offcanvas" style="background: rgb(8,197,50);margin: 0px 10px;">Add</button><button class="btn btn-primary" type="button" data-bs-dismiss="offcanvas" style="background: rgb(231,74,59);">Cancel</button></div>
+                <div class="col-lg-6" style="text-align: right;"><button class="btn btn-success" id="btnaddinventory-2" type="button" style="background: rgb(11,188,29);width: 50px;height: 50px;margin-right: 5px;border-width: 0px;" data-bs-target="#editUserOffcanvas" data-bs-toggle="offcanvas"><i class="far fa-save" style="font-size: 25px;color: rgb(255,255,255);"></i></button><button class="btn btn-danger" type="button" style="width: 50px;height: 50px;border-width: 0px;" data-bs-target="#DiscardModal" data-bs-toggle="modal"><i class="fas fa-trash-alt" style="font-size: 25px;"></i></button></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p style="padding: 6px 12px;color: rgb(255,15,0);font-weight: bold;font-style: italic;font-size: 11px;">Attention please!<br>The operations you make here will affect at user account.</p>
                 </div>
+            </div>
+            <form style="background: #eaeaea;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;">Email Address</label><input class="form-control" type="text" value="khyeshen91@gmail.com"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;">First Name</label><input class="form-control" type="text" value="Khye Shen"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;">Last Name</label><input class="form-control" type="text" value="Tan"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;">Gender</label>
+                <div class="dropdown"><button class="btn btn-primary dropdown-toggle form-control" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;background: rgb(255,255,255);color: rgb(0,0,0);border-color: rgba(0,0,0,0.24);">Male</button>
+                    <div class="dropdown-menu form-control" style="width: 100%;"><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">Male</a><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">Female</a></div>
+                </div><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;">Phone Number</label><input class="form-control" type="text" value="0123456789"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;">Address</label><textarea class="form-control" rows="3" wrap="soft">2A-10-2, Waterfront Q1, Jalan Queens, 11900, Bayan Lepas, Pulau Pinang</textarea>
+            </form>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="discardChangesModal_success">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="color: rgb(0,0,0);">Discard Changes</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p style="color: rgb(0,0,0);">Items has been successfully discarded!</p>
+                </div>
+                <div class="modal-footer"><a class="btn btn-primary" role="button" href="User%20List.php">Done</a></div>
             </div>
         </div>
     </div>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-2">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title">Edit User</h5><button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body" style="border-color: rgb(255,255,255);">
-            <div class="container">
-                <div class="row" style="margin-bottom: 10px;">
-                    <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Email Address</p><input type="text" style="width: 100%;" value="khyeshen91@gmail.com">
-                    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="DiscardModal">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Discard Changes</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="row" style="margin-bottom: 10px;">
-                    <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">First Name</p><input type="text" style="width: 100%;" value="Khye Shen">
-                        <p style="margin-bottom: 2px;">Last Name</p><input type="text" style="width: 100%;" value="Tan">
-                    </div>
+                <div class="modal-body">
+                    <p>Are you sure want to discard the changes?</p>
                 </div>
-                <div class="row" style="margin-bottom: 10px;">
-                    <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Gender</p>
-                        <div class="dropdown" style="width: 100%;height: 30px;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="color: rgb(0,0,0);background: rgb(255,255,255);width: 100%;text-align: left;border-color: rgb(136,136,136);height: 30px;padding: 2px 12px;">Gender</button>
-                            <div class="dropdown-menu" style="width: 100%;"><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">Male</a><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">Female</a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Phone Number</p><input type="text" style="width: 100%;" value="0123456789">
-                    </div>
-                    <div class="col-md-12">
-                        <p style="margin-bottom: 2px;">Address</p><input type="text" style="width: 100%;" value="2A-10-2, Waterfront Q1, Jalan Queens, 11900, Bayan Lepas, Pulau Pinang">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 col-lg-10 text-end" style="width: 100%;"><button class="btn btn-primary" id="btnaddinventory-1" type="button" data-bs-dismiss="offcanvas" style="background: rgb(8,197,50);margin: 0px 10px;">Save</button><button class="btn btn-primary" type="button" data-bs-dismiss="offcanvas" style="background: rgb(231,74,59);">Cancel</button></div>
-                </div>
+                <div class="modal-footer"><button class="btn btn-primary" id="showAlertBtn" type="button" data-bs-target="#discardChangesModal_success" data-bs-toggle="modal" data-bs-dismiss="modal" style="background: rgb(231,74,59);">Yes</button><button class="btn btn-light" type="button" data-bs-dismiss="modal" style="background: rgb(13,110,253);color: rgb(255,255,255);" data-bs-target="#DiscardModal" data-bs-toggle="modal">No</button></div>
             </div>
         </div>
     </div>
-    <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
-        <div class="modal-dialog" role="document">
+    <div class="modal fade" role="dialog" tabindex="-1" id="DeleteModal">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Delete Alert!</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -311,12 +307,13 @@
                 <div class="modal-body">
                     <p>Are you confirm to delete this record?</p>
                 </div>
-                <div class="modal-footer"><button class="btn btn-primary" id="showAlertBtn" type="button" data-bs-target="#modal-2" data-bs-toggle="modal" data-bs-dismiss="modal">Yes</button><button class="btn btn-light" type="button" data-bs-dismiss="modal" style="background: rgb(231,74,59);color: rgb(255,255,255);">No</button></div>
+                <div class="modal-footer"><button class="btn btn-primary" id="showAlertBtn-1" type="button" data-bs-target="#modal-2" data-bs-toggle="modal" data-bs-dismiss="modal" style="background: rgb(231,74,59);">Yes</button><button class="btn btn-light" type="button" data-bs-dismiss="modal" style="background: rgb(13,110,253);color: rgb(255,255,255);">No</button></div>
             </div>
         </div>
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/updateDropdownValue.js"></script>
     <script src="assets/js/AddMinusItems.js"></script>
     <script src="assets/js/Alert.js"></script>
     <script src="assets/js/sidebar.js"></script>

@@ -21,10 +21,9 @@
 
 <body id="page-top">
     <div id="wrapper">
-        
         <!-- Navigation Bar -->
         <?php include 'Nav.php' ?>
-
+        
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
                 <nav class="navbar navbar-light navbar-expand bg-dark shadow mb-4 topbar static-top">
@@ -369,10 +368,9 @@
                     </div>
                 </div>
             </div>
-            
             <!-- Footer Bar -->
             <?php include 'Footer.php' ?>
-
+            
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

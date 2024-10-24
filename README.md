@@ -51,6 +51,12 @@ Reminder:
 6- Product Browsing page - only one or two products displayed in one row
 7- Add return button for product details page 
 
+Enhancement:
+1-Hightlight current page in nav bar
+2-Google API and the cost
+3-Datatable scroll bar only allow to scroll the content
+4-Discard changes successful modal button
+
 USer nav - ZY Product detail
 User Footer - KS Product/Homepage, refer to /ks/static footer.txt
 Data table - PurchasingWebsite\PurchasingWebsite\JX\Admin Order\Admin Order and Payment\Admin.bsdesign (Add buttton follow ZY design)
