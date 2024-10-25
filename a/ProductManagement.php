@@ -23,7 +23,7 @@
     <div id="wrapper">
         <!-- Navigation Bar -->
         <?php include 'Nav.php' ?>
-        
+
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
                 <nav class="navbar navbar-light navbar-expand bg-dark shadow mb-4 topbar static-top">
@@ -150,7 +150,7 @@
                                             <td style="text-align: center;color: rgb(0,0,0);">RM999.99</td>
                                             <td style="text-align: center;color: rgb(0,0,0);">9999</td>
                                             <td>
-                                                <div class="col form-check form-switch"><input type="checkbox" class="form-check-input"></div>
+                                                <div class="col form-check form-switch"><input type="checkbox" class="form-check-input" checked=""></div>
                                             </td>
                                             <td style="text-align: center;">
                                                 <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: rgb(13,110,253);width: 25px;height: 25px;padding: 3px 3px;border-width: 1px;border-radius: 6px;margin: 0px 3px;" data-bs-target="#editProductsOffcanvas" data-bs-toggle="offcanvas"><i class="material-icons" style="color: rgb(255,255,255);font-size: 19px;">edit</i></button><button class="btn btn-primary" type="button" style="background: rgb(231,74,59);width: 25px;height: 25px;padding: 3px 3px;border-width: 1px;border-radius: 6px;margin: 0px 3px;" data-bs-target="#deleteProductsModal" data-bs-toggle="modal"><i class="material-icons" style="color: rgb(255,255,255);font-size: 19px;">delete</i></button></div>
@@ -163,7 +163,7 @@
                                             <td style="text-align: center;color: rgb(0,0,0);">RM999.99</td>
                                             <td style="text-align: center;color: rgb(0,0,0);">9999</td>
                                             <td style="text-align: center;">
-                                                <div class="col form-check form-switch"><input type="checkbox" class="form-check-input"></div>
+                                                <div class="col form-check form-switch"><input type="checkbox" class="form-check-input" checked=""></div>
                                             </td>
                                             <td style="text-align: center;">
                                                 <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: rgb(13,110,253);width: 25px;height: 25px;padding: 3px 3px;border-width: 1px;border-radius: 6px;margin: 0px 3px;" data-bs-target="#editProductsOffcanvas" data-bs-toggle="offcanvas"><i class="material-icons" style="color: rgb(255,255,255);font-size: 19px;">edit</i></button><button class="btn btn-primary" type="button" style="background: rgb(231,74,59);width: 25px;height: 25px;padding: 3px 3px;border-width: 1px;border-radius: 6px;margin: 0px 3px;" data-bs-target="#deleteProductsModal" data-bs-toggle="modal"><i class="material-icons" style="color: rgb(255,255,255);font-size: 19px;">delete</i></button></div>
@@ -176,7 +176,7 @@
                                             <td style="text-align: center;color: rgb(0,0,0);">RM999.99</td>
                                             <td style="text-align: center;color: rgb(0,0,0);">9999</td>
                                             <td style="text-align: center;">
-                                                <div class="col form-check form-switch"><input type="checkbox" class="form-check-input"></div>
+                                                <div class="col form-check form-switch"><input type="checkbox" class="form-check-input" checked=""></div>
                                             </td>
                                             <td style="text-align: center;">
                                                 <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: rgb(13,110,253);width: 25px;height: 25px;padding: 3px 3px;border-width: 1px;border-radius: 6px;margin: 0px 3px;" data-bs-target="#editProductsOffcanvas" data-bs-toggle="offcanvas"><i class="material-icons" style="color: rgb(255,255,255);font-size: 19px;">edit</i></button><button class="btn btn-primary" type="button" style="background: rgb(231,74,59);width: 25px;height: 25px;padding: 3px 3px;border-width: 1px;border-radius: 6px;margin: 0px 3px;" data-bs-target="#deleteProductsModal" data-bs-toggle="modal"><i class="material-icons" style="color: rgb(255,255,255);font-size: 19px;">delete</i></button></div>
@@ -189,7 +189,7 @@
                                             <td style="text-align: center;color: rgb(0,0,0);">RM999.99</td>
                                             <td style="text-align: center;color: rgb(0,0,0);">9999</td>
                                             <td style="text-align: center;">
-                                                <div class="col form-check form-switch"><input type="checkbox" class="form-check-input"></div>
+                                                <div class="col form-check form-switch"><input type="checkbox" class="form-check-input" checked=""></div>
                                             </td>
                                             <td style="text-align: center;">
                                                 <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: rgb(13,110,253);width: 25px;height: 25px;padding: 3px 3px;border-width: 1px;border-radius: 6px;margin: 0px 3px;" data-bs-target="#editProductsOffcanvas" data-bs-toggle="offcanvas"><i class="material-icons" style="color: rgb(255,255,255);font-size: 19px;">edit</i></button><button class="btn btn-primary" type="button" style="background: rgb(231,74,59);width: 25px;height: 25px;padding: 3px 3px;border-width: 1px;border-radius: 6px;margin: 0px 3px;" data-bs-target="#deleteProductsModal" data-bs-toggle="modal"><i class="material-icons" style="color: rgb(255,255,255);font-size: 19px;">delete</i></button></div>
@@ -202,7 +202,7 @@
                                             <td style="text-align: center;color: rgb(0,0,0);">RM999.99</td>
                                             <td style="text-align: center;color: rgb(0,0,0);">9999</td>
                                             <td style="text-align: center;">
-                                                <div class="col form-check form-switch"><input type="checkbox" class="form-check-input"></div>
+                                                <div class="col form-check form-switch"><input type="checkbox" class="form-check-input" checked=""></div>
                                             </td>
                                             <td style="text-align: center;">
                                                 <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: rgb(13,110,253);width: 25px;height: 25px;padding: 3px 3px;border-width: 1px;border-radius: 6px;margin: 0px 3px;" data-bs-target="#editProductsOffcanvas" data-bs-toggle="offcanvas"><i class="material-icons" style="color: rgb(255,255,255);font-size: 19px;">edit</i></button><button class="btn btn-primary" type="button" style="background: rgb(231,74,59);width: 25px;height: 25px;padding: 3px 3px;border-width: 1px;border-radius: 6px;margin: 0px 3px;" data-bs-target="#deleteProductsModal" data-bs-toggle="modal"><i class="material-icons" style="color: rgb(255,255,255);font-size: 19px;">delete</i></button></div>
@@ -215,7 +215,7 @@
                                             <td style="text-align: center;color: rgb(0,0,0);">RM999.99</td>
                                             <td style="text-align: center;color: rgb(0,0,0);">9999</td>
                                             <td style="text-align: center;">
-                                                <div class="col form-check form-switch"><input type="checkbox" class="form-check-input"></div>
+                                                <div class="col form-check form-switch"><input type="checkbox" class="form-check-input" checked=""></div>
                                             </td>
                                             <td style="text-align: center;">
                                                 <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background: rgb(13,110,253);width: 25px;height: 25px;padding: 3px 3px;border-width: 1px;border-radius: 6px;margin: 0px 3px;" data-bs-target="#editProductsOffcanvas" data-bs-toggle="offcanvas"><i class="material-icons" style="color: rgb(255,255,255);font-size: 19px;">edit</i></button><button class="btn btn-primary" type="button" style="background: rgb(231,74,59);width: 25px;height: 25px;padding: 3px 3px;border-width: 1px;border-radius: 6px;margin: 0px 3px;" data-bs-target="#deleteProductsModal" data-bs-toggle="modal"><i class="material-icons" style="color: rgb(255,255,255);font-size: 19px;">delete</i></button></div>
@@ -374,7 +374,6 @@
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/AddMinusItems.js"></script>
     <script src="assets/js/Alert.js"></script>
     <script src="assets/js/sidebar.js"></script>

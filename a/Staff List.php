@@ -129,9 +129,9 @@
                                 <div class="card-header d-flex flex-wrap justify-content-center align-items-center justify-content-sm-between gap-3" style="padding: 8px 16px;">
                                     <div class="row" style="margin: 0px;width: 100%;">
                                         <div class="col-xl-10 col-xxl-10" style="padding: 0px;">
-                                            <h1 style="margin: 0px 0px;margin-bottom: 0px;">User Management</h1>
+                                            <h1 style="margin: 0px 0px;margin-bottom: 0px;">Staff Management</h1>
                                         </div>
-                                        <div class="col-xxl-2 text-center d-xxl-flex justify-content-xxl-end align-items-xxl-center" style="padding: 0px;"><a class="btn btn-primary" role="button" style="width: 95px;font-weight: bold;color: rgb(255,255,255);background: #0bbc1d;border-width: 0px;" data-bs-target="#addUserOffcanvas" data-bs-toggle="offcanvas"><i class="fas fa-plus-square" style="border-color: rgb(255,255,255);color: rgb(255,255,255);background: rgba(255,255,255,0);font-size: 18px;"></i>&nbsp; Add</a></div>
+                                        <div class="col-xxl-2 text-center d-xxl-flex justify-content-xxl-end align-items-xxl-center" style="padding: 0px;"><a class="btn btn-primary" role="button" style="width: 95px;font-weight: bold;color: rgb(255,255,255);background: #0bbc1d;border-width: 0px;" data-bs-target="#AddStaffOffcanvas" data-bs-toggle="offcanvas"><i class="fas fa-plus-square" style="border-color: rgb(255,255,255);color: rgb(255,255,255);background: rgba(255,255,255,0);font-size: 18px;"></i>&nbsp; Add</a></div>
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -139,78 +139,82 @@
                                         <table class="table table-striped table-hover" id="example">
                                             <thead>
                                                 <tr>
-                                                    <th class="text-center">User ID</th>
+                                                    <th class="text-center">Staff ID</th>
                                                     <th class="text-center">Email Address</th>
                                                     <th class="text-center">First Name</th>
                                                     <th class="text-center">Last Name</th>
                                                     <th class="text-center">Gender</th>
                                                     <th class="text-center">Phone No.</th>
-                                                    <th class="text-center" style="min-width: 300px;padding: 20px;">Shipping Address</th>
-                                                    <th class="text-center">Sign Up By</th>
-                                                    <th class="text-center">Status</th>
+                                                    <th class="text-center">Sign In By</th>
+                                                    <th class="text-center">Active</th>
                                                     <th class="text-center text-center">Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td class="text-truncate" style="max-width: 200px;">00001</td>
-                                                    <td class="text-truncate" style="max-width: 200px;">khyeshen91@gmail.com</td>
-                                                    <td class="text-center">Khye Shen</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">S00001</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">staff1@gmail.com</td>
+                                                    <td class="text-center">Nelson</td>
                                                     <td class="text-center">Tan</td>
                                                     <td class="text-center">M</td>
-                                                    <td class="text-center">012-3456789</td>
-                                                    <td class="text-center">2A-10-2, Waterfront Q1, Jalan Queens, 11900, Bayan Lepas, Pulau Pinang</td>
+                                                    <td class="text-center">0123456789</td>
                                                     <td class="text-center">6/9/2024</td>
-                                                    <td class="text-center">Active</td>
-                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#editUserOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" id="showAlertBtn" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                                    <td class="text-center">
+                                                        <div class="col form-check form-switch"><input type="checkbox" class="form-check-input" checked=""></div>
+                                                    </td>
+                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditStaffOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" id="showAlertBtn" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-truncate" style="max-width: 200px;">00002</td>
-                                                    <td class="text-truncate" style="max-width: 200px;">jackson11@gmail.com</td>
-                                                    <td class="text-center">Jackson</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">S00002</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">staff2@gmail.com</td>
+                                                    <td class="text-center">Kelvin</td>
                                                     <td class="text-center">Wang</td>
                                                     <td class="text-center">M</td>
-                                                    <td class="text-center">011-32789876</td>
-                                                    <td class="text-center">22-3, Menara KLCC, Jalan Ampang, 50450 Kuala Lumpur</td>
+                                                    <td class="text-center">01132789876</td>
                                                     <td class="text-center">16/4/2023</td>
-                                                    <td class="text-center">Frozen</td>
-                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#editUserOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                                    <td class="text-center">
+                                                        <div class="col form-check form-switch"><input type="checkbox" class="form-check-input" checked=""></div>
+                                                    </td>
+                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditStaffOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-truncate" style="max-width: 200px;">00003</td>
-                                                    <td class="text-truncate" style="max-width: 200px;">chongwei12@gmail.com</td>
-                                                    <td class="text-center">Chong Wei</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">S00003</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">staff3@gmail.com</td>
+                                                    <td class="text-center">Michael</td>
                                                     <td class="text-center">Lee</td>
                                                     <td class="text-center">M</td>
-                                                    <td class="text-center">011-37485728</td>
-                                                    <td class="text-center">45-2-1, Block A, Bayan Mutiara, Jalan Mutiara 4, 11900 Bayan Lepas, Penang</td>
+                                                    <td class="text-center">01137485728</td>
                                                     <td class="text-center">19/9/2024</td>
-                                                    <td class="text-center">Active</td>
-                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#editUserOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                                    <td class="text-center">
+                                                        <div class="col form-check form-switch"><input type="checkbox" class="form-check-input" checked=""></div>
+                                                    </td>
+                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditStaffOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-truncate" style="max-width: 200px;">00004</td>
-                                                    <td class="text-truncate" style="max-width: 200px;">jennie13@gmail.com</td>
-                                                    <td class="text-center">Jennie</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">S00004</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">staff4@gmail.com</td>
+                                                    <td class="text-center">Jimmy</td>
                                                     <td class="text-center">Ang</td>
-                                                    <td class="text-center">F</td>
-                                                    <td class="text-center">010-22449987</td>
-                                                    <td class="text-center">78, Jalan Sutera Tanjung 8/4, Taman Sutera Utama, 81300 Johor Bahru, Johor</td>
+                                                    <td class="text-center">M</td>
+                                                    <td class="text-center">01022449987</td>
                                                     <td class="text-center">15/3/2024</td>
-                                                    <td class="text-center">Active</td>
-                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#editUserOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                                    <td class="text-center">
+                                                        <div class="col form-check form-switch"><input type="checkbox" class="form-check-input" checked=""></div>
+                                                    </td>
+                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditStaffOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-truncate" style="max-width: 200px;">00005</td>
-                                                    <td class="text-truncate" style="max-width: 200px;">jacky14@gmail.com</td>
-                                                    <td class="text-center">Jacky</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">S00005</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">staff5@gmail.com</td>
+                                                    <td class="text-center">Bruce</td>
                                                     <td class="text-center">Liew</td>
                                                     <td class="text-center">M</td>
-                                                    <td class="text-center">011-23654876</td>
-                                                    <td class="text-center">101, Lorong Lintas Plaza, Lintas, 88300 Kota Kinabalu, Sabah</td>
+                                                    <td class="text-center">01123654876</td>
                                                     <td class="text-center">23/1/2022</td>
-                                                    <td class="text-center">Active</td>
-                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#editUserOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                                    <td class="text-center">
+                                                        <div class="col form-check form-switch"><input type="checkbox" class="form-check-input" checked=""></div>
+                                                    </td>
+                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditStaffOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -226,46 +230,46 @@
             
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
     </div>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="addUserOffcanvas">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="AddStaffOffcanvas">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title"></h5><button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <div class="row">
                 <div class="col" style="width: 250px;">
-                    <h4 class="text-nowrap" style="width: 146px;">Add User</h4>
+                    <h4 class="text-nowrap" style="width: 146px;">Add Staff</h4>
                 </div>
-                <div class="col-lg-6" style="text-align: right;"><button class="btn btn-success" id="btnaddinventory" type="button" style="background: rgb(11,188,29);width: 50px;height: 50px;margin-right: 5px;border-width: 0px;" data-bs-target="#addUserOffcanvas" data-bs-toggle="offcanvas"><i class="fas fa-plus-square" style="font-size: 25px;color: rgb(255,255,255);"></i></button><button class="btn btn-danger" type="button" style="width: 50px;height: 50px;border-width: 0px;" data-bs-target="#DiscardModal" data-bs-toggle="modal"><i class="fas fa-trash-alt" style="font-size: 25px;"></i></button></div>
+                <div class="col-lg-6" style="text-align: right;"><button class="btn btn-success" id="btnaddinventory" type="button" style="background: rgb(11,188,29);width: 50px;height: 50px;margin-right: 5px;border-width: 0px;" data-bs-target="#AddStaffOffcanvas" data-bs-toggle="offcanvas"><i class="fas fa-plus-square" style="font-size: 25px;color: rgb(255,255,255);"></i></button><button class="btn btn-danger" type="button" style="width: 50px;height: 50px;border-width: 0px;" data-bs-target="#DiscardModal" data-bs-toggle="modal"><i class="fas fa-trash-alt" style="font-size: 25px;"></i></button></div>
             </div>
             <div class="row">
                 <div class="col" style="padding: 0px;">
-                    <p style="padding: 6px 12px;color: rgb(255,15,0);font-weight: bold;font-style: italic;font-size: 11px;">Attention please!<br>The operations you make here will affect at user account.</p>
+                    <p style="padding: 6px 12px;color: rgb(255,15,0);font-weight: bold;font-style: italic;font-size: 11px;">Attention please!<br>The operations you make here will affect at staff account.</p>
                 </div>
             </div>
             <form style="background: #cdcccc;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px;">Email Address</label><input class="form-control" type="text" placeholder="-" style="margin-bottom: 5px;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px;">First Name</label><input class="form-control" type="text" placeholder="-" style="margin-bottom: 5px;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px;">Last Name</label><input class="form-control" type="text" placeholder="-" style="margin-bottom: 5px;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px;">Gender</label>
                 <div class="dropdown"><button class="btn btn-primary dropdown-toggle form-control" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;background: rgb(255,255,255);color: rgb(0,0,0);border-color: rgba(0,0,0,0.24);margin-bottom: 5px;">Gender</button>
                     <div class="dropdown-menu form-control" style="width: 100%;"><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">Male</a><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">Female</a></div>
-                </div><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px;">Phone Number</label><input class="form-control" type="text" placeholder="-" style="margin-bottom: 5px;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px;">Shipping Address</label><textarea class="form-control" placeholder="-" rows="3" wrap="soft" style="margin-bottom: 5px;"></textarea>
+                </div><input class="form-control" type="text" placeholder="-" style="margin-bottom: 5px;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px;">Shipping Address</label><textarea class="form-control" placeholder="-" rows="3" wrap="soft" style="margin-bottom: 5px;"></textarea>
             </form>
         </div>
     </div>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="editUserOffcanvas">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="EditStaffOffcanvas">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title"></h5><button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <div class="row">
                 <div class="col" style="width: 250px;">
-                    <h4 class="text-nowrap" style="width: 146px;">Edit User</h4>
+                    <h4 class="text-nowrap" style="width: 146px;">Edit Staff</h4>
                 </div>
-                <div class="col-lg-6" style="text-align: right;"><button class="btn btn-success" id="btnaddinventory-2" type="button" style="background: rgb(11,188,29);width: 50px;height: 50px;margin-right: 5px;border-width: 0px;" data-bs-target="#editUserOffcanvas" data-bs-toggle="offcanvas"><i class="far fa-save" style="font-size: 25px;color: rgb(255,255,255);"></i></button><button class="btn btn-danger" type="button" style="width: 50px;height: 50px;border-width: 0px;" data-bs-target="#DiscardModal" data-bs-toggle="modal"><i class="fas fa-trash-alt" style="font-size: 25px;"></i></button></div>
+                <div class="col-lg-6" style="text-align: right;"><button class="btn btn-success" id="btnaddinventory-2" type="button" style="background: rgb(11,188,29);width: 50px;height: 50px;margin-right: 5px;border-width: 0px;" data-bs-target="#EditStaffOffcanvas" data-bs-toggle="offcanvas"><i class="far fa-save" style="font-size: 25px;color: rgb(255,255,255);"></i></button><button class="btn btn-danger" type="button" style="width: 50px;height: 50px;border-width: 0px;" data-bs-target="#DiscardModal" data-bs-toggle="modal"><i class="fas fa-trash-alt" style="font-size: 25px;"></i></button></div>
             </div>
             <div class="row">
                 <div class="col" style="padding: 0px;">
-                    <p style="padding: 6px 12px;color: rgb(255,15,0);font-weight: bold;font-style: italic;font-size: 11px;">Attention please!<br>The operations you make here will affect at user account.</p>
+                    <p style="padding: 6px 12px;color: rgb(255,15,0);font-weight: bold;font-style: italic;font-size: 11px;">Attention please!<br>The operations you make here will affect at staff account.</p>
                 </div>
             </div>
-            <form style="background: #cdcccc;padding: 0px;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin-bottom: 0px;">Email Address</label><input class="form-control" type="text" value="khyeshen91@gmail.com" style="margin-bottom: 5px;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px;">First Name</label><input class="form-control" type="text" value="Khye Shen" style="margin-bottom: 5px;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px;">Last Name</label><input class="form-control" type="text" value="Tan" style="margin-bottom: 5px;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px;">Gender</label>
+            <form style="background: #cdcccc;padding: 0px;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin-bottom: 0px;">Email Address</label><input class="form-control" type="text" value="staff1@gmail.com" style="margin-bottom: 5px;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px;">First Name</label><input class="form-control" type="text" value="Nelson" style="margin-bottom: 5px;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px;">Last Name</label><input class="form-control" type="text" value="Tan" style="margin-bottom: 5px;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px;">Gender</label>
                 <div class="dropdown"><button class="btn btn-primary dropdown-toggle form-control" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;background: rgb(255,255,255);color: rgb(0,0,0);border-color: rgba(0,0,0,0.24);margin-bottom: 5px;">Male</button>
                     <div class="dropdown-menu form-control" style="width: 100%;"><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">Male</a><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">Female</a></div>
                 </div><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px;">Phone Number</label><input class="form-control" type="text" value="0123456789" style="margin-bottom: 5px;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px;">Address</label><textarea class="form-control" rows="3" wrap="soft" style="margin-bottom: 5px;">2A-10-2, Waterfront Q1, Jalan Queens, 11900, Bayan Lepas, Pulau Pinang</textarea>
@@ -281,7 +285,7 @@
                 <div class="modal-body">
                     <p style="color: rgb(0,0,0);">Items has been successfully discarded!</p>
                 </div>
-                <div class="modal-footer"><a class="btn btn-primary" role="button" href="User%20List.php">Done</a></div>
+                <div class="modal-footer"><a class="btn btn-primary" role="button" href="Staff%20List.php">Done</a></div>
             </div>
         </div>
     </div>

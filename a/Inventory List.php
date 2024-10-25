@@ -24,7 +24,7 @@
     <div id="wrapper">
         <!-- Navigation Bar -->
         <?php include 'Nav.php' ?>
-        
+
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
                 <nav class="navbar navbar-light navbar-expand bg-dark shadow mb-4 topbar static-top">
@@ -122,7 +122,7 @@
                     </div>
                 </nav>
                 <div class="container-fluid">
-                    <div class="alert alert-success d-none alert-dismissible" role="alert" id="successMessage" style="background-color: #B4F7D2!important;border: 1px solid #0C6D38;"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" id="close_alert"></button><i class="icon ion-checkmark-round me-1"></i><span style="color: #0C6D38 !important;">Record Added Successfully</span></div>
+                    <div class="alert alert-success d-none alert-dismissible" role="alert" id="successMessage" style="background-color: #B4F7D2!important;border: 1px solid #0C6D38;"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" id="close_alert"></button><i class="icon ion-checkmark-round me-1"></i><span style="color: #0C6D38 !important;">Saved Changes Successfully</span></div>
                     <div class="row justify-content-center" style="margin: 0px;">
                         <div class="col-xl-10 col-xxl-9">
                             <div class="card shadow">
@@ -144,7 +144,7 @@
                                                     <th>Brand Name</th>
                                                     <th>Entry Date</th>
                                                     <th>Modified Date</th>
-                                                    <th>Modified By</th>
+                                                    <th>Status</th>
                                                     <th class="text-center">Action</th>
                                                 </tr>
                                             </thead>
@@ -155,7 +155,7 @@
                                                     <td class="text-center">Amaron</td>
                                                     <td class="text-center">6/9/2024</td>
                                                     <td class="text-center">6/9/2024</td>
-                                                    <td class="text-center">Khye Shen</td>
+                                                    <td class="text-center">In Stock</td>
                                                     <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditInventoryOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#modal-1"><i class="material-icons" id="showAlertBtn" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
@@ -164,7 +164,7 @@
                                                     <td class="text-center">Amaron</td>
                                                     <td class="text-center">6/9/2024</td>
                                                     <td class="text-center">6/9/2024</td>
-                                                    <td class="text-center">Khye Shen</td>
+                                                    <td class="text-center">In Stock</td>
                                                     <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditInventoryOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
@@ -173,7 +173,7 @@
                                                     <td class="text-center">Amaron</td>
                                                     <td class="text-center">6/9/2024</td>
                                                     <td class="text-center">6/9/2024</td>
-                                                    <td class="text-center">Khye Shen</td>
+                                                    <td class="text-center">Sold</td>
                                                     <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditInventoryOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
@@ -182,7 +182,7 @@
                                                     <td class="text-center">Elito</td>
                                                     <td class="text-center">6/9/2024</td>
                                                     <td class="text-center">6/9/2024</td>
-                                                    <td class="text-center">Khye Shen</td>
+                                                    <td class="text-center">Sold</td>
                                                     <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditInventoryOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
@@ -191,7 +191,7 @@
                                                     <td class="text-center">Elito</td>
                                                     <td class="text-center">6/9/2024</td>
                                                     <td class="text-center">6/9/2024</td>
-                                                    <td class="text-center">Khye Shen</td>
+                                                    <td class="text-center">Sold</td>
                                                     <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditInventoryOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
@@ -200,7 +200,7 @@
                                                     <td class="text-center">Elito</td>
                                                     <td class="text-center">6/9/2024</td>
                                                     <td class="text-center">6/9/2024</td>
-                                                    <td class="text-center">Khye Shen</td>
+                                                    <td class="text-center">Sold</td>
                                                     <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditInventoryOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
@@ -209,7 +209,7 @@
                                                     <td class="text-center">Elito</td>
                                                     <td class="text-center">6/9/2024</td>
                                                     <td class="text-center">6/9/2024</td>
-                                                    <td class="text-center">Khye Shen</td>
+                                                    <td class="text-center">Sold</td>
                                                     <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditInventoryOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
@@ -218,7 +218,7 @@
                                                     <td class="text-center">Elito</td>
                                                     <td class="text-center">6/9/2024</td>
                                                     <td class="text-center">10/9/2024</td>
-                                                    <td class="text-center">Eric</td>
+                                                    <td class="text-center">In Stock</td>
                                                     <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditInventoryOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
@@ -227,7 +227,7 @@
                                                     <td class="text-center">Elito</td>
                                                     <td class="text-center">6/9/2024</td>
                                                     <td class="text-center">11/9/2024</td>
-                                                    <td class="text-center">Eric</td>
+                                                    <td class="text-center">Sold</td>
                                                     <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditInventoryOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
@@ -236,7 +236,7 @@
                                                     <td class="text-center">Elito</td>
                                                     <td class="text-center">6/9/2024</td>
                                                     <td class="text-center">11/9/2024</td>
-                                                    <td class="text-center">Eric</td>
+                                                    <td class="text-center">Sold</td>
                                                     <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditInventoryOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
@@ -245,7 +245,7 @@
                                                     <td class="text-center">Elito</td>
                                                     <td class="text-center">6/9/2024</td>
                                                     <td class="text-center">6/9/2024</td>
-                                                    <td class="text-center">Khye Shen</td>
+                                                    <td class="text-center">In Stock</td>
                                                     <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditInventoryOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                                 <tr>
@@ -254,7 +254,7 @@
                                                     <td class="text-center">Elito</td>
                                                     <td class="text-center">6/9/2024</td>
                                                     <td class="text-center">6/9/2024</td>
-                                                    <td class="text-center">Khye Shen</td>
+                                                    <td class="text-center">Sold</td>
                                                     <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditInventoryOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#offcanvas-2"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
                                                 </tr>
                                             </tbody>
@@ -287,10 +287,13 @@
                     <p style="padding: 6px 12px;color: rgb(255,15,0);font-weight: bold;font-style: italic;font-size: 11px;">Attention please!<br>The operations you make here will affect at inventory.</p>
                 </div>
             </div>
-            <form style="background: #eaeaea;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;">Serial Number</label><input class="form-control" type="text" value="SN001"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;">Product Name</label>
-                <div class="dropdown"><button class="btn btn-primary dropdown-toggle form-control" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;background: rgb(255,255,255);color: rgb(0,0,0);border-color: rgba(0,0,0,0.24);"><span style="color: rgb(33, 37, 41);">NS60R (46B24R) MF AMARON GO</span></button>
+            <form style="background: #eaeaea;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px 0px;">Serial Number</label><input class="form-control" type="text" value="SN001" style="margin-bottom: 5px;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px 0px;">Product Name</label>
+                <div class="dropdown"><button class="btn btn-primary dropdown-toggle form-control" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;background: rgb(255,255,255);color: rgb(0,0,0);border-color: rgba(0,0,0,0.24);margin-bottom: 5px;"><span style="color: rgb(33, 37, 41);">NS60R (46B24R) MF AMARON GO</span></button>
                     <div class="dropdown-menu form-control" style="width: 100%;"><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">NS60R (46B24R) MF AMARON GO</a><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">NX100-6L (55B24L) MF AMARON HI-LIFE</a><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">ELITO NS60</a></div>
-                </div><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;">Brand Name</label><input class="form-control" type="text" value="Amaron" readonly=""><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;">Entry Date</label><input class="form-control" type="date" value="2024-09-10">
+                </div><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px 0px;">Brand Name</label><input class="form-control" type="text" value="Amaron" readonly="" style="margin-bottom: 5px;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px 0px;">Entry Date</label><input class="form-control" type="date" value="2024-09-10" style="margin-bottom: 5px;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px 0px;">Status</label>
+                <div class="dropdown" style="margin-bottom: 5px;"><button class="btn btn-primary dropdown-toggle form-control" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;background: rgb(255,255,255);color: rgb(0,0,0);border-color: rgba(0,0,0,0.24);margin-bottom: 5px;">In Stock</button>
+                    <div class="dropdown-menu form-control" style="width: 100%;"><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">In Stock</a><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">Sold</a><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">Damaged</a><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">Returned</a></div>
+                </div>
             </form>
         </div>
     </div>
@@ -334,7 +337,6 @@
         </div>
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/updateDropdownValue.js"></script>
     <script src="assets/js/AddMinusItems.js"></script>
     <script src="assets/js/Alert.js"></script>
