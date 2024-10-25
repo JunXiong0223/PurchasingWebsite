@@ -24,7 +24,7 @@
     <div id="wrapper">
         <!-- Navigation Bar -->
         <?php include 'Nav.php' ?>
-
+        
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
                 <nav class="navbar navbar-light navbar-expand bg-dark shadow mb-4 topbar static-top">
@@ -227,7 +227,7 @@
             </div>
             <!-- Footer Bar -->
             <?php include 'Footer.php' ?>
-            
+
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
     </div>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="AddStaffOffcanvas">
@@ -249,7 +249,7 @@
             <form style="background: #cdcccc;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px;">Email Address</label><input class="form-control" type="text" placeholder="-" style="margin-bottom: 5px;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px;">First Name</label><input class="form-control" type="text" placeholder="-" style="margin-bottom: 5px;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px;">Last Name</label><input class="form-control" type="text" placeholder="-" style="margin-bottom: 5px;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px;">Gender</label>
                 <div class="dropdown"><button class="btn btn-primary dropdown-toggle form-control" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="text-align: left;background: rgb(255,255,255);color: rgb(0,0,0);border-color: rgba(0,0,0,0.24);margin-bottom: 5px;">Gender</button>
                     <div class="dropdown-menu form-control" style="width: 100%;"><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">Male</a><a class="dropdown-item" href="#" onclick="updateDropdownText(this)">Female</a></div>
-                </div><input class="form-control" type="text" placeholder="-" style="margin-bottom: 5px;"><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px;">Shipping Address</label><textarea class="form-control" placeholder="-" rows="3" wrap="soft" style="margin-bottom: 5px;"></textarea>
+                </div><label class="form-label" style="width: 350px;padding: 6px 12px;padding-bottom: 6px;margin: 0px;">Shipping Address</label><textarea class="form-control" placeholder="-" rows="3" wrap="soft" style="margin-bottom: 5px;"></textarea>
             </form>
         </div>
     </div>
@@ -285,7 +285,7 @@
                 <div class="modal-body">
                     <p style="color: rgb(0,0,0);">Items has been successfully discarded!</p>
                 </div>
-                <div class="modal-footer"><a class="btn btn-primary" role="button" href="Staff%20List.php">Done</a></div>
+                <div class="modal-footer"><a class="btn btn-primary" role="button" href="Staff%20List.html">Done</a></div>
             </div>
         </div>
     </div>
