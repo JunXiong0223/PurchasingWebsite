@@ -1,0 +1,5 @@
+1. Receipt template
+2. Warranty details
+3. Battery Image
+4. Battery Details (Excel File)
+5. Battery Match List (Excel File)

@@ -1,2 +1,0 @@
-1-Hightlight current page in nav bar
-2-Google API and the cost
