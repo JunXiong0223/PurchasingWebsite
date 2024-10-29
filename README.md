@@ -46,6 +46,11 @@ Reminder:
 1- Product Browsing page - only one or two products displayed in one row
 2- Hightlight current page in nav bar
 3 -Google API and the cost
+SSM/Invoice
+Contract
+User Story
+Battery Matching Criteria
+UI include battery suggestion
 
 Enhancement:
 1-Hightlight current page in nav bar
