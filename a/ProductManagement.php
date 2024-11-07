@@ -21,16 +21,33 @@
 
 <body id="page-top">
     <div id="wrapper">
-        <!-- Navigation Bar -->
-        <?php include 'Nav.php' ?>
-
+        <nav class="navbar navbar-dark bg-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" style="--bs-primary: #131318;--bs-primary-rgb: 19,19,24;color: rgb(24,24,25);background: var(--bs-black);">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
+                    <div class="sidebar-brand-text mx-3"><span>Brand</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar-1">
+                    <li class="nav-item"><a class="nav-link" href="Dashboard.php"><i class="fas fa-tachometer-alt" style="margin: 0px;width: 20px;text-align: center;"></i><span style="padding: 0px 4px;">Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="AdminOrder.php"><i class="fas fa-shopping-cart" style="margin-right: 0px;width: 20px;text-align: center;"></i><span style="padding: 0px 4px;">Order</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="AdminPayment.php"><i class="fas fa-money-bill-wave" style="width: 20px;height: 14px;margin: 0px;text-align: center;"></i><span style="padding: 0px 4px;">Payment</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="Staff%20List.php"><i class="fas fa-users" style="margin-right: 0px;width: 20px;text-align: center;"></i><span style="padding: 0px 4px;">Staff</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="User%20List.php"><i class="fas fa-user" style="width: 20px;height: 20px;margin-right: 0px;text-align: center;"></i><span style="padding: 0px 4px;">User</span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="ProductManagement.php"><i class="fas fa-box" style="width: 20px;height: 20px;margin: 0px;text-align: center;"></i><span style="padding: 0px 4px;">Product</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="Inventory%20List.php"><i class="fas fa-boxes" style="margin-right: 0px;text-align: center;width: 20px;"></i><span style="padding: 0px 4px;">Inventory</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="LoginPage_Admin.php"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-logout" style="width: 20px;height: 14px;text-align: center;">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"></path>
+                                <path d="M7 12h14l-3 -3m0 6l3 -3"></path>
+                            </svg><span style="padding: 0px 4px;">Logout</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
         <div class="d-flex flex-column" id="content-wrapper">
-            <div id="content">
+            <div id="content" style="background: #ffffff;">
                 <nav class="navbar navbar-light navbar-expand bg-dark shadow mb-4 topbar static-top">
-                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
-                        <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
-                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ..."><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
-                        </form>
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop-1" type="button"><i class="fas fa-bars"></i></button>
                         <ul class="navbar-nav flex-nowrap ms-auto">
                             <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
                                 <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
@@ -41,110 +58,45 @@
                                     </form>
                                 </div>
                             </li>
+                            <li class="nav-item dropdown no-arrow mx-1"></li>
                             <li class="nav-item dropdown no-arrow mx-1">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
-                                        <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="me-3">
-                                                <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
-                                            </div>
-                                            <div><span class="small text-gray-500">December 12, 2019</span>
-                                                <p>A new monthly report is ready to download!</p>
-                                            </div>
-                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="me-3">
-                                                <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
-                                            </div>
-                                            <div><span class="small text-gray-500">December 7, 2019</span>
-                                                <p>$290.29 has been deposited into your account!</p>
-                                            </div>
-                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="me-3">
-                                                <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
-                                            </div>
-                                            <div><span class="small text-gray-500">December 2, 2019</span>
-                                                <p>Spending Alert: We've noticed unusually high spending for your account.</p>
-                                            </div>
-                                        </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown no-arrow mx-1">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">7</span><i class="fas fa-envelope fa-fw"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
-                                        <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="avatars/avatar4.jpeg">
-                                                <div class="bg-success status-indicator"></div>
-                                            </div>
-                                            <div class="fw-bold">
-                                                <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
-                                                <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
-                                            </div>
-                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="avatars/avatar2.jpeg">
-                                                <div class="status-indicator"></div>
-                                            </div>
-                                            <div class="fw-bold">
-                                                <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
-                                                <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
-                                            </div>
-                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="avatars/avatar3.jpeg">
-                                                <div class="bg-warning status-indicator"></div>
-                                            </div>
-                                            <div class="fw-bold">
-                                                <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
-                                                <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
-                                            </div>
-                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="avatars/avatar5.jpeg">
-                                                <div class="bg-success status-indicator"></div>
-                                            </div>
-                                            <div class="fw-bold">
-                                                <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
-                                                <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
-                                            </div>
-                                        </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                                    </div>
-                                </div>
                                 <div class="shadow dropdown-list dropdown-menu dropdown-menu-end" aria-labelledby="alertsDropdown"></div>
                             </li>
-                            <div class="d-none d-sm-block topbar-divider"></div>
                             <li class="nav-item dropdown no-arrow">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">Valerie Luna</span><i class="far fa-user d-xl-flex justify-content-xl-center align-items-xl-center" style="font-size: 28px;width: 32px;height: 32px;"></i></a>
-                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="#"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a><a class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Activity log</a>
-                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">Khye Shen</span><i class="far fa-user d-xl-flex justify-content-xl-center align-items-xl-center" style="font-size: 28px;width: 32px;height: 32px;"></i></a>
+                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="LoginPage_Admin.php"><i class="fab fa-expeditedssl fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Change Password</a>
+                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="LoginPage_Admin.php"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
                                     </div>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </nav>
-                <div class="container-fluid">
-                    <div class="row">
+                <div class="container-fluid" style="background: #ffffff;">
+                    <div class="row" style="margin: 0px;">
                         <div class="col">
                             <h2>Product Management</h2>
                         </div>
                         <div class="col-xxl-2" id="add" style="width: 120px;padding: 0px 12px;"><button class="btn btn-primary" type="button" style="width: 95px;font-weight: bold;color: rgb(255,255,255);background: #0bbc1d;border-width: 0px;" data-bs-target="#addProductsOffcanvas" data-bs-toggle="offcanvas"><i class="fas fa-plus-square" style="border-color: rgb(255,255,255);color: rgb(255,255,255);background: rgba(255,255,255,0);font-size: 18px;"></i>&nbsp; Add</button></div>
                     </div>
-                    <div class="row">
-                        <div class="col-12" style="padding: 6px 12px;">
-                            <div class="table-responsive" style="padding: 6px 12px;background: rgb(255,255,255);border-width: 5px;">
+                    <div class="row" style="margin: 0px;">
+                        <div class="col-12" style="padding: 0px;">
+                            <div class="table-responsive" style="padding: 0px;background: rgb(255,255,255);border-width: 5px;">
                                 <table class="table table-hover table-sm" id="productmanagementtable">
-                                    <thead>
-                                        <tr>
-                                            <th style="text-align: center;width: 120px;color: rgb(0,0,0);font-weight: bold;">Image</th>
-                                            <th style="text-align: center;color: rgb(0,0,0);font-weight: bold;">Brand</th>
-                                            <th style="text-align: center;color: rgb(0,0,0);font-weight: bold;">Product Name</th>
-                                            <th style="text-align: center;width: 120px;color: rgb(0,0,0);font-weight: bold;">Price</th>
-                                            <th style="text-align: center;width: 120px;color: rgb(0,0,0);font-weight: bold;">Quantity</th>
-                                            <th style="text-align: center;color: rgb(0,0,0);font-weight: bold;width: 120px;padding: 4px;">Status</th>
-                                            <th style="text-align: center;width: 120px;color: rgb(0,0,0);font-weight: bold;">Action</th>
+                                    <thead style="border-width: 1px;border-style: solid;border-radius: 0px;">
+                                        <tr class="table-dark" style="color: #ffffff;">
+                                            <th style="text-align: center;color: #ffffff;font-weight: bold;padding: 8px 0px;">Image</th>
+                                            <th style="text-align: center;color: #ffffff;font-weight: bold;padding: 8px 0px;">Brand</th>
+                                            <th style="text-align: center;color: #ffffff;font-weight: bold;padding: 8px 0px;">Product Name</th>
+                                            <th style="text-align: center;width: 120px;color: #ffffff;font-weight: bold;padding: 8px 0px;">Price</th>
+                                            <th style="text-align: center;width: 120px;color: #ffffff;font-weight: bold;padding: 8px 0px;">Quantity</th>
+                                            <th style="text-align: center;color: #ffffff;font-weight: bold;width: 120px;padding: 8px 0px;">Status</th>
+                                            <th style="text-align: center;width: 120px;color: #ffffff;font-weight: bold;padding: 8px 0px;">Action</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody style="border-width: 1px;border-style: solid;">
                                         <tr>
-                                            <td><img src="assets/img/duracelbattery-removebg-preview.png" width="120px"></td>
+                                            <td style="text-align: center;"><img src="assets/img/duracelbattery-removebg-preview.png" width="120px"></td>
                                             <td style="color: rgb(0,0,0);text-align: center;">Brand A</td>
                                             <td style="text-align: center;color: rgb(0,0,0);">Battery1</td>
                                             <td style="text-align: center;color: rgb(0,0,0);">RM999.99</td>
@@ -157,7 +109,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><img src="assets/img/duracelbattery-removebg-preview.png" width="120px"></td>
+                                            <td style="text-align: center;"><img src="assets/img/duracelbattery-removebg-preview.png" width="120px"></td>
                                             <td style="text-align: center;color: rgb(0,0,0);">Brand B</td>
                                             <td style="text-align: center;color: rgb(0,0,0);">Battery2</td>
                                             <td style="text-align: center;color: rgb(0,0,0);">RM999.99</td>
@@ -170,7 +122,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><img src="assets/img/duracelbattery-removebg-preview.png" width="120px"></td>
+                                            <td style="text-align: center;"><img src="assets/img/duracelbattery-removebg-preview.png" width="120px"></td>
                                             <td style="text-align: center;color: rgb(0,0,0);">Brand C</td>
                                             <td style="text-align: center;color: rgb(0,0,0);">Battery3</td>
                                             <td style="text-align: center;color: rgb(0,0,0);">RM999.99</td>
@@ -183,7 +135,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><img src="assets/img/duracelbattery-removebg-preview.png" width="120px"></td>
+                                            <td style="text-align: center;"><img src="assets/img/duracelbattery-removebg-preview.png" width="120px"></td>
                                             <td style="text-align: center;color: rgb(0,0,0);">Brand D</td>
                                             <td style="text-align: center;color: rgb(0,0,0);">Battery4</td>
                                             <td style="text-align: center;color: rgb(0,0,0);">RM999.99</td>
@@ -196,7 +148,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><img src="assets/img/duracelbattery-removebg-preview.png" width="120px"></td>
+                                            <td style="text-align: center;"><img src="assets/img/duracelbattery-removebg-preview.png" width="120px"></td>
                                             <td style="text-align: center;color: rgb(0,0,0);">Brand E</td>
                                             <td style="text-align: center;color: rgb(0,0,0);">Battery5</td>
                                             <td style="text-align: center;color: rgb(0,0,0);">RM999.99</td>
@@ -209,7 +161,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><img src="assets/img/duracelbattery-removebg-preview.png" width="120px"></td>
+                                            <td style="text-align: center;"><img src="assets/img/duracelbattery-removebg-preview.png" width="120px"></td>
                                             <td style="text-align: center;color: rgb(0,0,0);">Brand F</td>
                                             <td style="text-align: center;color: rgb(0,0,0);">Battery6</td>
                                             <td style="text-align: center;color: rgb(0,0,0);">RM999.99</td>
@@ -349,7 +301,7 @@
                                 <div class="modal-body">
                                     <p><span style="color: rgb(33, 37, 41);">Are you sure want to delete this item?</span></p>
                                 </div>
-                                <div class="modal-footer"><button class="btn btn-success" type="button" style="color: rgb(255,255,255);background: #0bbc1d;" data-bs-target="#deleteProductsModal_success" data-bs-toggle="modal">Yes</button><a class="btn btn-danger" role="button" href="ProductManagement.php" data-bs-target="#deleteProductsModal" data-bs-toggle="modal">No</a></div>
+                                <div class="modal-footer"><button class="btn btn-success" type="button" style="color: rgb(255,255,255);background: rgb(13,110,253);" data-bs-target="#deleteProductsModal_success" data-bs-toggle="modal">Yes</button><a class="btn btn-danger" role="button" href="ProductManagement.php" data-bs-target="#deleteProductsModal" data-bs-toggle="modal" style="background: rgb(255,255,255);color: rgb(0,0,0);border-style: solid;border-color: rgb(0,0,0);">No</a></div>
                             </div>
                         </div>
                     </div>
@@ -362,18 +314,21 @@
                                 <div class="modal-body">
                                     <p><span style="color: rgb(33, 37, 41);">Are you sure want to discard the changes?</span></p>
                                 </div>
-                                <div class="modal-footer"><button class="btn btn-success" type="button" style="color: rgb(255,255,255);background: #0bbc1d;" data-bs-target="#discardChangesModal_success" data-bs-toggle="modal">Yes</button><a class="btn btn-danger" role="button" href="ProductManagement.php" data-bs-target="#discardChangesModal" data-bs-toggle="modal">No</a></div>
+                                <div class="modal-footer"><button class="btn btn-success" type="button" style="color: rgb(255,255,255);background: rgb(13,110,253);" data-bs-target="#discardChangesModal_success" data-bs-toggle="modal">Yes</button><a class="btn btn-danger" role="button" href="ProductManagement.php" data-bs-target="#discardChangesModal" data-bs-toggle="modal" style="background: rgb(255,255,255);color: rgb(0,0,0);border-style: solid;border-color: rgb(0,0,0);">No</a></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Footer Bar -->
-            <?php include 'Footer.php' ?>
-            
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Copyright © Brand 2024</span></div>
+                </div>
+            </footer>
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/AddMinusItems.js"></script>
     <script src="assets/js/Alert.js"></script>
     <script src="assets/js/sidebar.js"></script>

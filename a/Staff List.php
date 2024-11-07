@@ -22,16 +22,33 @@
 
 <body id="page-top" style="border-color: rgba(33,37,41,0);">
     <div id="wrapper">
-        <!-- Navigation Bar -->
-        <?php include 'Nav.php' ?>
-        
+        <nav class="navbar navbar-dark bg-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" style="--bs-primary: #131318;--bs-primary-rgb: 19,19,24;color: rgb(24,24,25);background: var(--bs-black);">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
+                    <div class="sidebar-brand-text mx-3"><span>Brand</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar-1">
+                    <li class="nav-item"><a class="nav-link" href="Dashboard.php"><i class="fas fa-tachometer-alt" style="margin: 0px;width: 20px;text-align: center;"></i><span style="padding: 0px 4px;">Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="AdminOrder.php"><i class="fas fa-shopping-cart" style="margin-right: 0px;width: 20px;text-align: center;"></i><span style="padding: 0px 4px;">Order</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="AdminPayment.php"><i class="fas fa-money-bill-wave" style="width: 20px;height: 14px;margin: 0px;text-align: center;"></i><span style="padding: 0px 4px;">Payment</span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Staff%20List.php"><i class="fas fa-users" style="margin-right: 0px;width: 20px;text-align: center;"></i><span style="padding: 0px 4px;">Staff</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="User%20List.php"><i class="fas fa-user" style="width: 20px;height: 20px;margin-right: 0px;text-align: center;"></i><span style="padding: 0px 4px;">User</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="ProductManagement.php"><i class="fas fa-box" style="width: 20px;height: 20px;margin: 0px;text-align: center;"></i><span style="padding: 0px 4px;">Product</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="Inventory%20List.php"><i class="fas fa-boxes" style="margin-right: 0px;text-align: center;width: 20px;"></i><span style="padding: 0px 4px;">Inventory</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="LoginPage_Admin.php"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-logout" style="width: 20px;height: 14px;text-align: center;">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"></path>
+                                <path d="M7 12h14l-3 -3m0 6l3 -3"></path>
+                            </svg><span style="padding: 0px 4px;">Logout</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle-1" type="button"></button></div>
+            </div>
+        </nav>
         <div class="d-flex flex-column" id="content-wrapper">
-            <div id="content">
+            <div id="content" style="background: #ffffff;">
                 <nav class="navbar navbar-light navbar-expand bg-dark shadow mb-4 topbar static-top">
-                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
-                        <form class="d-none d-sm-inline-block me-auto ms-md-3 my-2 my-md-0 mw-100 navbar-search">
-                            <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ..."><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
-                        </form>
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop-1" type="button"><i class="fas fa-bars"></i></button>
                         <ul class="navbar-nav flex-nowrap ms-auto">
                             <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fas fa-search"></i></a>
                                 <div class="dropdown-menu dropdown-menu-end p-3 animated--grow-in" aria-labelledby="searchDropdown">
@@ -42,79 +59,14 @@
                                     </form>
                                 </div>
                             </li>
+                            <li class="nav-item dropdown no-arrow mx-1"></li>
                             <li class="nav-item dropdown no-arrow mx-1">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
-                                        <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="me-3">
-                                                <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
-                                            </div>
-                                            <div><span class="small text-gray-500">December 12, 2019</span>
-                                                <p>A new monthly report is ready to download!</p>
-                                            </div>
-                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="me-3">
-                                                <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
-                                            </div>
-                                            <div><span class="small text-gray-500">December 7, 2019</span>
-                                                <p>$290.29 has been deposited into your account!</p>
-                                            </div>
-                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="me-3">
-                                                <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
-                                            </div>
-                                            <div><span class="small text-gray-500">December 2, 2019</span>
-                                                <p>Spending Alert: We've noticed unusually high spending for your account.</p>
-                                            </div>
-                                        </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown no-arrow mx-1">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">7</span><i class="fas fa-envelope fa-fw"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
-                                        <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="avatars/avatar4.jpeg">
-                                                <div class="bg-success status-indicator"></div>
-                                            </div>
-                                            <div class="fw-bold">
-                                                <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
-                                                <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
-                                            </div>
-                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="avatars/avatar2.jpeg">
-                                                <div class="status-indicator"></div>
-                                            </div>
-                                            <div class="fw-bold">
-                                                <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
-                                                <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
-                                            </div>
-                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="avatars/avatar3.jpeg">
-                                                <div class="bg-warning status-indicator"></div>
-                                            </div>
-                                            <div class="fw-bold">
-                                                <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
-                                                <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
-                                            </div>
-                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="avatars/avatar5.jpeg">
-                                                <div class="bg-success status-indicator"></div>
-                                            </div>
-                                            <div class="fw-bold">
-                                                <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
-                                                <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
-                                            </div>
-                                        </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                                    </div>
-                                </div>
                                 <div class="shadow dropdown-list dropdown-menu dropdown-menu-end" aria-labelledby="alertsDropdown"></div>
                             </li>
-                            <div class="d-none d-sm-block topbar-divider"></div>
                             <li class="nav-item dropdown no-arrow">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">Valerie Luna</span><i class="far fa-user d-xl-flex justify-content-xl-center align-items-xl-center" style="font-size: 28px;width: 32px;height: 32px;"></i></a>
-                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="#"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a><a class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Activity log</a>
-                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">Khye Shen</span><i class="far fa-user d-xl-flex justify-content-xl-center align-items-xl-center" style="font-size: 28px;width: 32px;height: 32px;"></i></a>
+                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="LoginPage_Admin.php"><i class="fab fa-expeditedssl fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Change Password</a>
+                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="LoginPage_Admin.php"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
                                     </div>
                                 </div>
                             </li>
@@ -123,111 +75,107 @@
                 </nav>
                 <div class="container-fluid">
                     <div class="alert alert-success d-none alert-dismissible" role="alert" id="successMessage" style="background-color: #B4F7D2!important;border: 1px solid #0C6D38;"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" id="close_alert"></button><i class="icon ion-checkmark-round me-1"></i><span style="color: #0C6D38 !important;">Record Added Successfully</span></div>
-                    <div class="row justify-content-center" style="margin: 0px;">
-                        <div class="col-xl-10 col-xxl-9">
-                            <div class="card shadow">
-                                <div class="card-header d-flex flex-wrap justify-content-center align-items-center justify-content-sm-between gap-3" style="padding: 8px 16px;">
-                                    <div class="row" style="margin: 0px;width: 100%;">
-                                        <div class="col-xl-10 col-xxl-10" style="padding: 0px;">
-                                            <h1 style="margin: 0px 0px;margin-bottom: 0px;">Staff Management</h1>
-                                        </div>
-                                        <div class="col-xxl-2 text-center d-xxl-flex justify-content-xxl-end align-items-xxl-center" style="padding: 0px;"><a class="btn btn-primary" role="button" style="width: 95px;font-weight: bold;color: rgb(255,255,255);background: #0bbc1d;border-width: 0px;" data-bs-target="#AddStaffOffcanvas" data-bs-toggle="offcanvas"><i class="fas fa-plus-square" style="border-color: rgb(255,255,255);color: rgb(255,255,255);background: rgba(255,255,255,0);font-size: 18px;"></i>&nbsp; Add</a></div>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table class="table table-striped table-hover" id="example">
-                                            <thead>
-                                                <tr>
-                                                    <th class="text-center">Staff ID</th>
-                                                    <th class="text-center">Email Address</th>
-                                                    <th class="text-center">First Name</th>
-                                                    <th class="text-center">Last Name</th>
-                                                    <th class="text-center">Gender</th>
-                                                    <th class="text-center">Phone No.</th>
-                                                    <th class="text-center">Sign In By</th>
-                                                    <th class="text-center">Active</th>
-                                                    <th class="text-center text-center">Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="text-truncate" style="max-width: 200px;">S00001</td>
-                                                    <td class="text-truncate" style="max-width: 200px;">staff1@gmail.com</td>
-                                                    <td class="text-center">Nelson</td>
-                                                    <td class="text-center">Tan</td>
-                                                    <td class="text-center">M</td>
-                                                    <td class="text-center">0123456789</td>
-                                                    <td class="text-center">6/9/2024</td>
-                                                    <td class="text-center">
-                                                        <div class="col form-check form-switch"><input type="checkbox" class="form-check-input" checked=""></div>
-                                                    </td>
-                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditStaffOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" id="showAlertBtn" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-truncate" style="max-width: 200px;">S00002</td>
-                                                    <td class="text-truncate" style="max-width: 200px;">staff2@gmail.com</td>
-                                                    <td class="text-center">Kelvin</td>
-                                                    <td class="text-center">Wang</td>
-                                                    <td class="text-center">M</td>
-                                                    <td class="text-center">01132789876</td>
-                                                    <td class="text-center">16/4/2023</td>
-                                                    <td class="text-center">
-                                                        <div class="col form-check form-switch"><input type="checkbox" class="form-check-input" checked=""></div>
-                                                    </td>
-                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditStaffOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-truncate" style="max-width: 200px;">S00003</td>
-                                                    <td class="text-truncate" style="max-width: 200px;">staff3@gmail.com</td>
-                                                    <td class="text-center">Michael</td>
-                                                    <td class="text-center">Lee</td>
-                                                    <td class="text-center">M</td>
-                                                    <td class="text-center">01137485728</td>
-                                                    <td class="text-center">19/9/2024</td>
-                                                    <td class="text-center">
-                                                        <div class="col form-check form-switch"><input type="checkbox" class="form-check-input" checked=""></div>
-                                                    </td>
-                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditStaffOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-truncate" style="max-width: 200px;">S00004</td>
-                                                    <td class="text-truncate" style="max-width: 200px;">staff4@gmail.com</td>
-                                                    <td class="text-center">Jimmy</td>
-                                                    <td class="text-center">Ang</td>
-                                                    <td class="text-center">M</td>
-                                                    <td class="text-center">01022449987</td>
-                                                    <td class="text-center">15/3/2024</td>
-                                                    <td class="text-center">
-                                                        <div class="col form-check form-switch"><input type="checkbox" class="form-check-input" checked=""></div>
-                                                    </td>
-                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditStaffOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-truncate" style="max-width: 200px;">S00005</td>
-                                                    <td class="text-truncate" style="max-width: 200px;">staff5@gmail.com</td>
-                                                    <td class="text-center">Bruce</td>
-                                                    <td class="text-center">Liew</td>
-                                                    <td class="text-center">M</td>
-                                                    <td class="text-center">01123654876</td>
-                                                    <td class="text-center">23/1/2022</td>
-                                                    <td class="text-center">
-                                                        <div class="col form-check form-switch"><input type="checkbox" class="form-check-input" checked=""></div>
-                                                    </td>
-                                                    <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditStaffOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
+                    <div class="row" style="margin: 0px 12px;">
+                        <div class="col" style="padding: 0px;">
+                            <h2>Staff Management</h2>
+                        </div>
+                        <div class="col-xxl-2" id="add" style="width: 120px;padding: 0px;text-align: right;"><a class="btn btn-primary" role="button" style="width: 95px;font-weight: bold;color: rgb(255,255,255);background: #0bbc1d;border-width: 0px;" data-bs-target="#AddStaffOffcanvas" data-bs-toggle="offcanvas"><i class="fas fa-plus-square" style="border-color: rgb(255,255,255);color: rgb(255,255,255);background: rgba(255,255,255,0);font-size: 18px;"></i>&nbsp; Add</a></div>
+                    </div>
+                    <div class="row justify-content-center" style="margin: 0px;height: 100%;">
+                        <div class="col-12" style="background: #ffffff;padding: 0px;">
+                            <div class="table-responsive">
+                                <table class="table table-hover" id="example">
+                                    <thead>
+                                        <tr class="table-dark">
+                                            <th class="text-center">Staff ID</th>
+                                            <th class="text-center">Email Address</th>
+                                            <th class="text-center">First Name</th>
+                                            <th class="text-center">Last Name</th>
+                                            <th class="text-center">Gender</th>
+                                            <th class="text-center">Phone No.</th>
+                                            <th class="text-center">Sign In By</th>
+                                            <th class="text-center">Active</th>
+                                            <th class="text-center text-center">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-truncate" style="text-align: center;">S00001</td>
+                                            <td class="text-truncate" style="text-align: center;">staff1@gmail.com</td>
+                                            <td class="text-center">Nelson</td>
+                                            <td class="text-center">Tan</td>
+                                            <td class="text-center">M</td>
+                                            <td class="text-center">0123456789</td>
+                                            <td class="text-center">6/9/2024</td>
+                                            <td class="text-center">
+                                                <div class="col form-check form-switch"><input type="checkbox" class="form-check-input" checked=""></div>
+                                            </td>
+                                            <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditStaffOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" id="showAlertBtn-2" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-truncate" style="text-align: center;">S00002</td>
+                                            <td class="text-truncate" style="text-align: center;">staff2@gmail.com</td>
+                                            <td class="text-center">Kelvin</td>
+                                            <td class="text-center">Wang</td>
+                                            <td class="text-center">M</td>
+                                            <td class="text-center">01132789876</td>
+                                            <td class="text-center">16/4/2023</td>
+                                            <td class="text-center">
+                                                <div class="col form-check form-switch"><input type="checkbox" class="form-check-input" checked=""></div>
+                                            </td>
+                                            <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditStaffOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-truncate" style="text-align: center;">S00003</td>
+                                            <td class="text-truncate" style="text-align: center;">staff3@gmail.com</td>
+                                            <td class="text-center">Michael</td>
+                                            <td class="text-center">Lee</td>
+                                            <td class="text-center">M</td>
+                                            <td class="text-center">01137485728</td>
+                                            <td class="text-center">19/9/2024</td>
+                                            <td class="text-center">
+                                                <div class="col form-check form-switch"><input type="checkbox" class="form-check-input" checked=""></div>
+                                            </td>
+                                            <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditStaffOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-truncate" style="text-align: center;">S00004</td>
+                                            <td class="text-truncate" style="text-align: center;">staff4@gmail.com</td>
+                                            <td class="text-center">Jimmy</td>
+                                            <td class="text-center">Ang</td>
+                                            <td class="text-center">M</td>
+                                            <td class="text-center">01022449987</td>
+                                            <td class="text-center">15/3/2024</td>
+                                            <td class="text-center">
+                                                <div class="col form-check form-switch"><input type="checkbox" class="form-check-input" checked=""></div>
+                                            </td>
+                                            <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditStaffOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-truncate" style="text-align: center;">S00005</td>
+                                            <td class="text-truncate" style="text-align: center;">staff5@gmail.com</td>
+                                            <td class="text-center">Bruce</td>
+                                            <td class="text-center">Liew</td>
+                                            <td class="text-center">M</td>
+                                            <td class="text-center">01123654876</td>
+                                            <td class="text-center">23/1/2022</td>
+                                            <td class="text-center">
+                                                <div class="col form-check form-switch"><input type="checkbox" class="form-check-input" checked=""></div>
+                                            </td>
+                                            <td class="text-start text-center"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;" data-bs-target="#EditStaffOffcanvas"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">edit</i></button><button class="btn btn-primary" type="button" data-bs-toggle="modal" style="width: 25px;height: 25px;padding: 3px 3px;text-align: center;margin: 0px 3px;background: rgb(231,74,59);" data-bs-target="#DeleteModal"><i class="material-icons" style="font-size: 19px;--bs-primary: #4e73df;--bs-primary-rgb: 78,115,223;color: rgb(255,255,255);" type="button">delete</i></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Footer Bar -->
-            <?php include 'Footer.php' ?>
-
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Copyright © Brand 2024</span></div>
+                </div>
+            </footer>
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
     </div>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="AddStaffOffcanvas">
@@ -285,7 +233,7 @@
                 <div class="modal-body">
                     <p style="color: rgb(0,0,0);">Items has been successfully discarded!</p>
                 </div>
-                <div class="modal-footer"><a class="btn btn-primary" role="button" href="Staff%20List.html">Done</a></div>
+                <div class="modal-footer"><a class="btn btn-primary" role="button" href="Staff%20List.php">Done</a></div>
             </div>
         </div>
     </div>
@@ -298,7 +246,7 @@
                 <div class="modal-body">
                     <p>Are you sure want to discard the changes?</p>
                 </div>
-                <div class="modal-footer"><button class="btn btn-primary" id="showAlertBtn" type="button" data-bs-target="#discardChangesModal_success" data-bs-toggle="modal" data-bs-dismiss="modal" style="background: rgb(231,74,59);">Yes</button><button class="btn btn-light" type="button" data-bs-dismiss="modal" style="background: rgb(13,110,253);color: rgb(255,255,255);" data-bs-target="#DiscardModal" data-bs-toggle="modal">No</button></div>
+                <div class="modal-footer"><button class="btn btn-primary" id="showAlertBtn" type="button" data-bs-target="#discardChangesModal_success" data-bs-toggle="modal" data-bs-dismiss="modal" style="background: rgb(13,110,253);">Yes</button><button class="btn btn-light" type="button" data-bs-dismiss="modal" style="background: rgb(255,255,255);color: rgb(0,0,0);border: 1px solid rgb(0,0,0);" data-bs-target="#DiscardModal" data-bs-toggle="modal">No</button></div>
             </div>
         </div>
     </div>
@@ -311,11 +259,12 @@
                 <div class="modal-body">
                     <p>Are you confirm to delete this record?</p>
                 </div>
-                <div class="modal-footer"><button class="btn btn-primary" id="showAlertBtn-1" type="button" data-bs-target="#modal-2" data-bs-toggle="modal" data-bs-dismiss="modal" style="background: rgb(231,74,59);">Yes</button><button class="btn btn-light" type="button" data-bs-dismiss="modal" style="background: rgb(13,110,253);color: rgb(255,255,255);">No</button></div>
+                <div class="modal-footer"><button class="btn btn-primary" id="showAlertBtn-1" type="button" data-bs-target="#modal-2" data-bs-toggle="modal" data-bs-dismiss="modal" style="background: rgb(13,110,253);">Yes</button><button class="btn btn-light" type="button" data-bs-dismiss="modal" style="background: rgb(255,255,255);color: rgb(0,0,0);border-style: solid;border-color: rgb(0,0,0);">No</button></div>
             </div>
         </div>
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/updateDropdownValue.js"></script>
     <script src="assets/js/AddMinusItems.js"></script>
     <script src="assets/js/Alert.js"></script>

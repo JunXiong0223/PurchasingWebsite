@@ -1,7 +1,16 @@
+th {
+  text-align: center;
+}
+
+td {
+  text-align: center;
+}
+
 .table td .form-check {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+  text-align: center;
 }
 

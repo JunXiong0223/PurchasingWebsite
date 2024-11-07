@@ -37,7 +37,11 @@
         </div>
     </div>
     <!-- Footer -->
-    <?php include 'Footer.php' ?>
+    <footer class="bg-white sticky-footer">
+        <div class="container my-auto">
+            <div class="text-center my-auto copyright"><span>Copyright © Brand 2024</span></div>
+        </div>
+    </footer>
     
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
