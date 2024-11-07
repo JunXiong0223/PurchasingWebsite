@@ -50,8 +50,7 @@ SSM/Invoice
 Contract
 User Story
 Battery Matching Criteria
-UI include battery suggestion
-Reset inventory management, order management, user managemment and product management all column to align center
+Dashboard changes does not deployed
 
 Enhancement:
 1-Hightlight current page in nav bar
