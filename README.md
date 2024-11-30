@@ -33,31 +33,7 @@ Warranty - On hold
 Add Order Page - /ks/Admin/Add Orer.html
 Confirm Order Page - /ks/Admin/Confirm Order.html
 
-Blocker and doubt:
-1- user nav bar
-2- Standardize the design and components such as alert box, confirm deletion box, nav bar colour and table format
-3- Payment record in table format
-4- Order creation page
-5- Order List Page (Title)
-6- Inventory Management Add Status
-5- Project Tasks_v2.xlsx has uploaded to Github, please refer to excel file
-
-Reminder:
-1- Product Browsing page - only one or two products displayed in one row
-2- Hightlight current page in nav bar
-3 -Google API and the cost
-SSM/Invoice
-Contract
-User Story
-Battery Matching Criteria
-Dashboard changes does not deployed
-
-Enhancement:
-1-Hightlight current page in nav bar
-2-Google API and the cost
-3-Datatable scroll bar only allow to scroll the content
-4-Discard changes successful modal button
-
+Reference Point:
 USer nav - ZY Product detail
 User Footer - KS Product/Homepage, refer to /ks/static footer.txt
 Data table - PurchasingWebsite\PurchasingWebsite\JX\Admin Order\Admin Order and Payment\Admin.bsdesign (Add buttton follow ZY design)
@@ -65,3 +41,18 @@ Delete Confirmaton Box - /ZY/ProductManagement
 Add/Edit Modal - /ZY/ProductManagement
 Admin Nav -/ks/Admin/Dashboard.html (Pending)
 Successful message - /ZY/ProductDetails/ProductDetail 
+
+Blocker and doubt:
+1- 
+
+Reminder:
+1- Contract
+2- User Story
+3- Battery Matching Criteria
+4- PHPMailer limit and costing
+
+Enhancement:
+1-Discard changes successful modal button
+2- Import excel file to update inventory
+
+

@@ -1,0 +1,13 @@
+Requirement:
+Product management with unique serial number
+staff manually add order (walk-in/emergency need)
+Bot chat ask brand name, model, left/right, year, and suggest battery
+Direct user from bot chat to payment page or whatsapps chat(urgent)
+Battery match (catput/ooisays)
+Static Voucher ID (New user benefit)
+Show Unit Price in cart
+EGHL Payment gateway
+Find Current Location
+
+Anhancement:
+Coordinate location and assign order to nearest runner
